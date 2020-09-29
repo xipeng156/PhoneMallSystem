@@ -9,10 +9,10 @@ import org.apache.commons.codec.digest.DigestUtils;
  * @Modified by:
  */
 public class MD5 {
-    public String getMD5(String text){
+    public static String getMD5(String text){
         return DigestUtils.md5Hex(text);
     }
-    public String getMD5(String text,String key){
+    public static String getMD5(String text,String key){
         return DigestUtils.md5Hex(text+key);
     }
 }
