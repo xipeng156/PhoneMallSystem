@@ -1,3 +1,7 @@
+### url
+注册：/register
+登录：/login
+
 #### user
 
 - id 主键
