@@ -3,6 +3,7 @@ package com.qst.service.imp;
 import com.qst.mapper.UserMapper;
 import com.qst.pojo.User;
 import com.qst.service.UserService;
+import com.qst.util.MD5;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,7 @@ public class UserServiceImp implements UserService {
     UserMapper userMapper;
 
     public int register(User user) {
+        user.setPassword(MD5.getMD5(user.getPassword()));
         return userMapper.insert(user);
     }
 }
