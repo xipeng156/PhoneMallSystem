@@ -196,6 +196,14 @@
             <artifactId>mybatis-generator-core</artifactId>
             <version>1.4.0</version>
         </dependency>
+        <!--        MD5加解密工具-->
+        <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.11</version>
+        </dependency>
+
     </dependencies>
 
 
