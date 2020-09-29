@@ -13,49 +13,49 @@
 		
 		<div id="main">
 			<div id="table">
-				<table>
-					<tr><th>新用户注册</th></tr>
-					<tr>
-						<td>
-							<input placeholder="请设置8-10位登录账号" type="text" name="loginName" id="loginName"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input placeholder="请设置6位密码" type="text" name="password" id="password"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input placeholder="请再次输入密码" type="text" name="againPwd" id="againPwd"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input placeholder="请输入真实姓名" type="text" name="userName" id="userName"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input placeholder="请设置手机号" type="text" name="phone" id="phone"/>
-						</td>
-					</tr>
-					<tr class="error">
-						<td>
-							{{error}}
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<button id="register" type="button">立即注册</button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="#">已有账号，去登录</a>
-						</td>
-					</tr>
-				</table>
+					<table>
+						<tr><th>新用户注册</th></tr>
+						<tr>
+							<td>
+								<input placeholder="请设置8-10位登录账号" type="text" name="loginName" id="loginName"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input placeholder="请设置6位密码" type="text" name="password" id="password"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input placeholder="请再次输入密码" type="text" name="againPwd" id="againPwd"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input placeholder="请输入真实姓名" type="text" name="userName" id="userName"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input placeholder="请设置手机号" type="text" name="phone" id="phone"/>
+							</td>
+						</tr>
+						<tr class="error">
+							<td>
+								{{error}}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button id="register" type="button">立即注册</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">已有账号，去登录</a>
+							</td>
+						</tr>
+					</table>
 			</div>
 		</div>
 		
@@ -68,24 +68,24 @@
 		<script type="text/javascript" src="WEB-INF/js/vue.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				var loginName = $("#loginName").val();
-				var password = $("#password").val();
-				var userName = $("#userName").val();
-				var phone = $("#phone").val();
-				
 				vue = new Vue({
 					el:".error",
 					data:{
 						error:""
 					}
 				});
-				var d = {
-					"loginName":loginName,
-					"password":password,
-					"userName":userName,
-					"phone":phone
-				}
+
 				$("#register").click(function(){
+					var loginName = $("#loginName").val();
+					var password = $("#password").val();
+					var userName = $("#userName").val();
+					var phone = $("#phone").val();
+					var d = {
+						"loginName":loginName,
+						"password":password,
+						"userName":userName,
+						"phone":phone
+					}
 					$.post("/register",d,function(data){
 						if(data){
 							location.href="denglu.html";
