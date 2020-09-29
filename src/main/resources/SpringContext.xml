@@ -40,7 +40,7 @@
 <!--        <property name="mapperInterface" value="com.qst.dao.UserMapper"/>-->
 <!--    </bean>-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.qst.dao"/>
+        <property name="basePackage" value="com.qst.mapper"/>
     </bean>
 
 <!--    声明式事务-->
