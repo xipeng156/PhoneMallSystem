@@ -21,6 +21,8 @@ public class User {
 
     private Integer status;
 
+    private String phone;
+
     public Integer getId() {
         return id;
     }
@@ -93,6 +95,14 @@ public class User {
         this.status = status;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone == null ? null : phone.trim();
+    }
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -113,7 +123,8 @@ public class User {
             && (this.getBirthday() == null ? other.getBirthday() == null : this.getBirthday().equals(other.getBirthday()))
             && (this.getRole() == null ? other.getRole() == null : this.getRole().equals(other.getRole()))
             && (this.getUserpic() == null ? other.getUserpic() == null : this.getUserpic().equals(other.getUserpic()))
-            && (this.getStatus() == null ? other.getStatus() == null : this.getStatus().equals(other.getStatus()));
+            && (this.getStatus() == null ? other.getStatus() == null : this.getStatus().equals(other.getStatus()))
+            && (this.getPhone() == null ? other.getPhone() == null : this.getPhone().equals(other.getPhone()));
     }
 
     @Override
@@ -129,6 +140,7 @@ public class User {
         result = prime * result + ((getRole() == null) ? 0 : getRole().hashCode());
         result = prime * result + ((getUserpic() == null) ? 0 : getUserpic().hashCode());
         result = prime * result + ((getStatus() == null) ? 0 : getStatus().hashCode());
+        result = prime * result + ((getPhone() == null) ? 0 : getPhone().hashCode());
         return result;
     }
 }
