@@ -138,3 +138,18 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+input,
+textarea,
+button,
+select {
+    border: none;
+}
+
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+    outline: none;
+    outline-offset: 0;
+}
