@@ -1,6 +1,14 @@
 ### url
-注册：/register，
-登录：/login，
+####注册：
+  请求url： /register
+  入参：（1）登录账号---> loginName
+       （1）密码---> password
+       （1）用户真实姓名---> userName
+       （1）手机号---> phone
+  返回参数：data------>1：表示登录成功
+                     0：表示登录失败
+  
+登录：/denglu，
 
 #### user
 
