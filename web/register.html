@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>登录</title>
-		<link rel="stylesheet" type="text/css" href="WEB-INF/css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="WEB-INF/css/register.css"/>
 	</head>
 	<body>
 	
@@ -74,12 +74,14 @@
 						error:""
 					}
 				});
-
-				$("#register").click(function(){
-					var loginName = $("#loginName").val();
-					var password = $("#password").val();
-					var userName = $("#userName").val();
-					var phone = $("#phone").val();
+			});
+			$("#register").click(function(){
+				var loginName = $("#loginName").val();
+				var password = $("#password").val();
+				var againPwd = $("#againPwd").val();
+				var userName = $("#userName").val();
+				var phone = $("#phone").val();
+				if(loginName.length>=8 && loginName.length<=10 && password.length==6 && againPwd==password && userName!="" && phone.length==11){
 					var d = {
 						"loginName":loginName,
 						"password":password,
@@ -94,10 +96,11 @@
 							vue.error="注册失败"
 						}
 					});
-				});
-				
+				}
+				else{
+					vue.error="信息格式错误"
+				}
 			});
-			
 		</script>
 	</body>
 </html>
