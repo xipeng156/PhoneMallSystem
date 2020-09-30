@@ -10,6 +10,16 @@
   
 登录：/denglu，
 
+### 文件太大 无法拉取问题解决方法
+error: RPC failed; curl 56 OpenSSL SSL_read: Connection was reset, errno 10054
+  1、打开gitcmd
+  2、设置拉取大小
+     git config --global http.postBuffer 524288000
+  3、查看git配置
+     git config --list
+  4、重试拉取
+
+
 #### user
 
 - id 主键
