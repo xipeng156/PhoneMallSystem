@@ -16,6 +16,12 @@ public class Goods {
 
     private Date invalidTime;
 
+    private String color;
+
+    private String type;
+
+    private Integer count;
+
     public Integer getId() {
         return id;
     }
@@ -64,6 +70,30 @@ public class Goods {
         this.invalidTime = invalidTime;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color == null ? null : color.trim();
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type == null ? null : type.trim();
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -81,7 +111,10 @@ public class Goods {
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
             && (this.getIntroduce() == null ? other.getIntroduce() == null : this.getIntroduce().equals(other.getIntroduce()))
             && (this.getPrice() == null ? other.getPrice() == null : this.getPrice().equals(other.getPrice()))
-            && (this.getInvalidTime() == null ? other.getInvalidTime() == null : this.getInvalidTime().equals(other.getInvalidTime()));
+            && (this.getInvalidTime() == null ? other.getInvalidTime() == null : this.getInvalidTime().equals(other.getInvalidTime()))
+            && (this.getColor() == null ? other.getColor() == null : this.getColor().equals(other.getColor()))
+            && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
+            && (this.getCount() == null ? other.getCount() == null : this.getCount().equals(other.getCount()));
     }
 
     @Override
@@ -94,6 +127,9 @@ public class Goods {
         result = prime * result + ((getIntroduce() == null) ? 0 : getIntroduce().hashCode());
         result = prime * result + ((getPrice() == null) ? 0 : getPrice().hashCode());
         result = prime * result + ((getInvalidTime() == null) ? 0 : getInvalidTime().hashCode());
+        result = prime * result + ((getColor() == null) ? 0 : getColor().hashCode());
+        result = prime * result + ((getType() == null) ? 0 : getType().hashCode());
+        result = prime * result + ((getCount() == null) ? 0 : getCount().hashCode());
         return result;
     }
 }

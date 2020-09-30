@@ -8,6 +8,9 @@
     <result column="introduce" jdbcType="VARCHAR" property="introduce" />
     <result column="price" jdbcType="DECIMAL" property="price" />
     <result column="invalid_time" jdbcType="TIMESTAMP" property="invalidTime" />
+    <result column="color" jdbcType="VARCHAR" property="color" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="count" jdbcType="INTEGER" property="count" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -68,7 +71,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, good_id, name, introduce, price, invalid_time
+    id, good_id, name, introduce, price, invalid_time, color, type, count
   </sql>
   <select id="selectByExample" parameterType="com.qst.pojo.GoodsExample" resultMap="BaseResultMap">
     select
@@ -105,9 +108,11 @@
       SELECT LAST_INSERT_ID()
     </selectKey>
     insert into goods (good_id, name, introduce, 
-      price, invalid_time)
+      price, invalid_time, color, 
+      type, count)
     values (#{goodId,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{introduce,jdbcType=VARCHAR}, 
-      #{price,jdbcType=DECIMAL}, #{invalidTime,jdbcType=TIMESTAMP})
+      #{price,jdbcType=DECIMAL}, #{invalidTime,jdbcType=TIMESTAMP}, #{color,jdbcType=VARCHAR}, 
+      #{type,jdbcType=VARCHAR}, #{count,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.qst.pojo.Goods">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
@@ -130,6 +135,15 @@
       <if test="invalidTime != null">
         invalid_time,
       </if>
+      <if test="color != null">
+        color,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="count != null">
+        count,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="goodId != null">
@@ -146,6 +160,15 @@
       </if>
       <if test="invalidTime != null">
         #{invalidTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="color != null">
+        #{color,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null">
+        #{count,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -176,6 +199,15 @@
       <if test="record.invalidTime != null">
         invalid_time = #{record.invalidTime,jdbcType=TIMESTAMP},
       </if>
+      <if test="record.color != null">
+        color = #{record.color,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=VARCHAR},
+      </if>
+      <if test="record.count != null">
+        count = #{record.count,jdbcType=INTEGER},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -188,7 +220,10 @@
       name = #{record.name,jdbcType=VARCHAR},
       introduce = #{record.introduce,jdbcType=VARCHAR},
       price = #{record.price,jdbcType=DECIMAL},
-      invalid_time = #{record.invalidTime,jdbcType=TIMESTAMP}
+      invalid_time = #{record.invalidTime,jdbcType=TIMESTAMP},
+      color = #{record.color,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=VARCHAR},
+      count = #{record.count,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -211,6 +246,15 @@
       <if test="invalidTime != null">
         invalid_time = #{invalidTime,jdbcType=TIMESTAMP},
       </if>
+      <if test="color != null">
+        color = #{color,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null">
+        count = #{count,jdbcType=INTEGER},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -220,7 +264,10 @@
       name = #{name,jdbcType=VARCHAR},
       introduce = #{introduce,jdbcType=VARCHAR},
       price = #{price,jdbcType=DECIMAL},
-      invalid_time = #{invalidTime,jdbcType=TIMESTAMP}
+      invalid_time = #{invalidTime,jdbcType=TIMESTAMP},
+      color = #{color,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      count = #{count,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

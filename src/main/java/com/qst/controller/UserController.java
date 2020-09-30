@@ -46,8 +46,21 @@ public class UserController {
             session.setAttribute("status",JSON.toJSONString(UserStatus.REGISTER_FAIL));
         }
 
-        return "";
+        return "denglu";
     }
 
+    @RequestMapping("/denglu")
+    public String denglu(HttpSession session,
+            @RequestParam(value = "loginName",required = false) String userName,
+                         @RequestParam(value = "password",required = false) String password){
+        User user = new User();
+        user.setUsername(userName);
+        user.setPassword(password);
+        User login = userService.login(user);
+        login.setPassword(null);
+//        判断角色
+        session.setAttribute("user",JSON.toJSON(login));
+        return "home";
+    }
 
 }
