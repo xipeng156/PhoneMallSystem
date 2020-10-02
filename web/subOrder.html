@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交订单</title>
+    <link rel="stylesheet" type="text/css" href="WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="WEB-INF/css/subOrder.css"/>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="WEB-INF/css/goCar.css"/>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="container-fluid header_container">
+        <div class="row header_row">
+            <div class="col-lg-2">
+                <ul class="header_left">
+                    <li>欢迎您:<span id="userName">ssssss<span></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-5">
+            </div>
+            <div class="col-lg-5">
+                <ul class="header_right">
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;购物车</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-list" aria-hidden="true"></span>&nbsp;我的订单</a></li>
+                    <li><a href="#">关于MyPhone</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <!--页面标题 -->
+    <div class="container-fluid body_container">
+        <!-- 页面标题行 -->
+        <div class="container-fluid">
+            <div class="row title_row">
+                <div class="col-lg-5 title_left">
+                    <a>MyPhone</a>
+                    <span>结算清单</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 商品清单 -->
+        <div class="container-fluid suborder_container">
+            <!-- 确认订单标题 -->
+            <div class="row ordertitile_row">
+                <div class="col-lg-2">
+                    <span>请确认表单信息</span>
+                </div>
+            </div>
+            <!-- 表头 -->
+            <div class="row orderthead_row">
+                <div class="col-lg-1 orderthead_item"">
+                    <span><input type="checkbox" />&nbsp;全选</span>
+                </div>
+                <div class="col-lg-7 orderthead_item"">
+                    <span>商品</span>
+                </div>
+                <div class="col-lg-1 orderthead_item"">
+                    <span>单价</span>
+                </div>
+                <div class="col-lg-1 orderthead_item"">
+                    <span>数量</span>
+                </div>
+                <div class="col-lg-1 orderthead_item">
+                    <span>小计</span>
+                </div>
+                <div class="col-lg-1 orderthead_item">
+                    <span>操作</span>
+                </div>
+            </div>
+            <!-- 商品信息 -->
+            <div class="row product_row">
+                <div class="col-lg-1 product_item">
+                        <span><input type="checkbox" /></span>          
+                </div>
+                <div class="col-lg-7 product_item">
+                    <span>
+                        <img src="WEB-INF/img/apple/11ProMax/1.jpg" alt="" style="width: 80px;">
+                    </span>
+                    <span>Apple iphone 11 Pro Max 256GB 移动联通电信4G手机</span>
+                </div>
+                <div class="col-lg-1 product_item price">
+                    <span>10899.00</span>
+                </div>
+                <div class="col-lg-1 product_item">
+                    <span>1</span>
+                </div>
+                <div class="col-lg-1 product_item price">
+                    <span>10899.00</span>
+                </div>
+                <div class="col-lg-1 product_item">
+                    <span><a>删除</a></span>
+                </div>
+            </div>
+            <div class="row product_row">
+                <div class="col-lg-1 product_item">
+                        <span><input type="checkbox" /></span>          
+                </div>
+                <div class="col-lg-7 product_item">
+                    <span>
+                        <img src="WEB-INF/img/apple/11ProMax/1.jpg" alt="" style="width: 80px;">
+                    </span>
+                    <span>Apple iphone 11 Pro Max 256GB 移动联通电信4G手机</span>
+                </div>
+                <div class="col-lg-1 product_item price">
+                    <span>10899.00</span>
+                </div>
+                <div class="col-lg-1 product_item">
+                    <span>1</span>
+                </div>
+                <div class="col-lg-1 product_item price">
+                    <span>10899.00</span>
+                </div>
+                <div class="col-lg-1 product_item">
+                    <span><a>删除</a></span>
+                </div>
+            </div>
+            <!-- 总计 -->
+            <div class="row count_row">
+                <div class="col-lg-9"></div>
+                <div class="col-lg-3 count">
+                    <div>
+                        <p><span class="left">实付款：</span><span class="price all">￥10899.00</span></p>
+                        <p><span class="left">寄送至：</span>内蒙古工业大学金川小区上院小区</p>
+                        <p><span class="left">收货人：</span>苏昆</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 提交订单 -->
+            <div class="row sub_row">
+                <div class="col-lg-9"></div>
+                <div class="col-lg-3">
+                    <button type="button" class="btn btn-default sub">提交订单</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+</body>
+</html>

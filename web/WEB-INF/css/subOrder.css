@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+/* 头部 */
+.header_container{
+	background-color: #dddddd;
+}
+.header_row{
+	height: 30px;
+	padding-left: 18%;
+}
+.header_left li,.header_right li{
+	line-height: 30px;
+	float: left;
+	margin-left: 10px;
+}
+.header_left li:first-child,.header_right li:first-child{
+	margin-left: 0;
+}
+.header_right a{
+	padding-right: 3px;
+	border-right: 1px solid;
+}
+.header_right li:last-child a{
+	border: none;
+}
+
+/* 页面标题 */
+.title_row{
+	padding-left: 19%;
+	margin-top: 10px;
+}
+.title_left{
+	height: 80px;
+}
+.title_left a{
+	line-height: 80px;
+	color: red;
+	font-weight: bolder;
+	font-size: 25px;
+}
+.title_left a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+.title_left span{
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+/* 订单主体 */
+.suborder_container .row{
+    padding-left: 15%;
+    padding-right: 12%;
+}
+.suborder_container .row:not(.product_row){
+    margin-top: 10px;
+}
+/* 订单标题 */
+.ordertitile_row span{
+    font-size: 15px;
+    font-weight: bolder;
+}
+/* 订单表头 */
+.orderthead_item{
+    height: 40px;
+    border-bottom: 1px solid gainsboro;
+}
+.orderthead_item span{
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* 订单商品 */
+/* .product_container{
+    padding: 0;
+} */
+.product_item{
+    height: 100px;
+    background-color: rgb(255, 244, 232);
+    padding-top: 0;
+}
+.product_item span{
+    line-height: 100px;
+}
+.product_item a:hover{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+.product_item{
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+.product_item:last-child{
+    border-right: none;
+}
+/* 总计 */
+.count{
+    border: 1px solid red;
+}
+.count p{
+    font-size: 13px;
+}
+/* 所有价格的颜色 */
+.price{
+    color: red;
+}
+.all{
+    font-size: 25px;
+}
+.count .left{
+    font-weight: bolder;
+}
+
+/* 按钮 */
+.sub_row .sub{
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+.sub_row .sub:hover{
+    background-color: red;
+    color: white;
+}
