@@ -18,7 +18,7 @@ public class UserTest {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("SpringContext.xml");
         UserService service = context.getBean(UserService.class);
         User user = new User();
-        user.setUsername("123");
+        user.setUsername("1234");
         user.setPassword("123");
         user.setPhone("121212");
         user.setRealname("张三");
@@ -29,7 +29,23 @@ public class UserTest {
         else {
             System.out.println(JSON.toJSONString(UserStatus.REGISTER_FAIL));
         }
+    }
 
-
+    @Test
+    public void LoginTest(){
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("SpringContext.xml");
+        UserService service = context.getBean(UserService.class);
+        User user = new User();
+        user.setUsername("123");
+        user.setPassword("123");
+        user.setPhone("121212");
+        user.setRealname("张三");
+        User login = service.login(user);
+        if (login!=null){
+            System.out.println(JSON.toJSONString(login));
+        }
+        else {
+            System.out.println(JSON.toJSONString(UserStatus.LOGIN_FAIL));
+        }
     }
 }

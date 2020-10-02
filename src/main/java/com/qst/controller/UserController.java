@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.qst.enums.UserStatus;
 import com.qst.pojo.User;
 import com.qst.service.UserService;
+import com.qst.util.Constants;
 import com.qst.util.MD5;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,27 +41,33 @@ public class UserController {
         user.setPhone(phone);
         int register = userService.register(user);
         if (register==1){
-            session.setAttribute("status",JSON.toJSONString(UserStatus.REGISTER_SUCCESS));
+            session.setAttribute(Constants.REGISTER_STATIC_SESSION,JSON.toJSONString(UserStatus.REGISTER_SUCCESS));
         }
         else {
-            session.setAttribute("status",JSON.toJSONString(UserStatus.REGISTER_FAIL));
+            session.setAttribute(Constants.REGISTER_STATIC_SESSION,JSON.toJSONString(UserStatus.REGISTER_FAIL));
         }
-
+//        跳转到登录页
         return "denglu";
     }
 
-    @RequestMapping("/denglu")
+    @RequestMapping(value = "/denglu",method = RequestMethod.POST)
     public String denglu(HttpSession session,
-            @RequestParam(value = "loginName",required = false) String userName,
-                         @RequestParam(value = "password",required = false) String password){
+            @RequestParam(value = "loginName") String userName,
+                         @RequestParam(value = "password") String password){
         User user = new User();
         user.setUsername(userName);
         user.setPassword(password);
         User login = userService.login(user);
         login.setPassword(null);
-//        判断角色
-        session.setAttribute("user",JSON.toJSON(login));
+//        判断角色:前端处理
+        session.setAttribute(Constants.USER_SESSION,JSON.toJSON(login));
         return "home";
+    }
+
+    @RequestMapping("/logout")
+    public String logout(HttpSession session){
+        session.removeAttribute(Constants.USER_SESSION);
+        return "denglu";
     }
 
 }
