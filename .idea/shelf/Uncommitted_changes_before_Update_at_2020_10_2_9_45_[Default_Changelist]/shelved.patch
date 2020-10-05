@@ -1,0 +1,1335 @@
+Index: web/WEB-INF/css/login.css
+===================================================================
+--- web/WEB-INF/css/login.css	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
++++ web/WEB-INF/css/login.css	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
+@@ -1,78 +0,0 @@
+-*{
+-	margin: 0;
+-	padding: 0;
+-	text-decoration: none;
+-	list-style: none;
+-}
+-header{
+-	height: 50px;
+-}
+-header>h2{
+-	margin-left: 25%;
+-	line-height: 50px;
+-	color: red;
+-}
+-#main{
+-	position: relative;
+-	width: 100%;
+-	height: 500px;
+-	background-color: red;
+-}
+-#table{
+-	position: absolute;
+-	top: 0;
+-	bottom: 0;
+-	left: 0;
+-	right: 0;
+-	margin: auto;
+-	width: 350px;
+-	height: 450px;
+-	background-color: white;
+-	text-align: center;
+-}
+-#table > table{
+-	margin: 0 auto;
+-	margin-top: 35px;
+-	border: none;
+-}
+-	
+-#table > table th{
+-	font-size: 20px;
+-	border-bottom: 1px solid gray;
+-}
+-#table > table input{
+-	margin-top: 10px;
+-	height: 30px;
+-	width: 250px;
+-	border-radius: 5px;
+-	border: 1px solid gainsboro;
+-	box-sizing: border-box;
+-	padding-left: 15px;
+-}
+-#table > table button{
+-	margin-top: 10px;
+-	height: 30px;
+-	width: 250px;
+-	border: none;
+-	border-radius: 5px;
+-	background-color: orangered;
+-}
+-#table > table:last-child td{
+-	text-align: left;
+-}
+-#table > table:last-child a{
+-	color: black;
+-	font-size: 10px;
+-}
+-#table > table:last-child a:hover{
+-	color: red;
+-}
+-footer{
+-	text-align: center;
+-	width: 100%;
+-	height: 20px;
+-}
+-footer span{
+-	font-size: 10px;
+-	line-height: 20px;
+-}
+\ No newline at end of file
+Index: web/login.html
+===================================================================
+--- web/login.html	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
++++ web/login.html	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
+@@ -1,78 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-	<head>
+-		<meta charset="utf-8">
+-		<title>登录</title>
+-		<link rel="stylesheet" type="text/css" href="WEB-INF/css/login.css"/>
+-	</head>
+-	<body>
+-	
+-		<header>
+-			<h2>MyPhone</h2>
+-		</header>
+-		
+-		<div id="main">
+-			<div id="table">
+-				<table>
+-					<tr><th>新用户注册</th></tr>
+-					<tr>
+-						<td>
+-							<input placeholder="请设置登录账号" type="text" name="loginName" id="loginName"/>
+-							<br>
+-							<span>登录账号为8-12位</span>
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<input placeholder="请设置密码" type="text" name="password" id="password"/>
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<input placeholder="请再次输入密码" type="text" name="againPwd" id="againPwd"/>
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<input placeholder="请设置手机号" type="text" name="phone" id="phone"/>
+-						</td>
+-					</tr>
+-					<tr class="error">
+-						<td>
+-							
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<button type="button">立即注册</button>
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<a href="#">已有账号，去登录</a>
+-						</td>
+-					</tr>
+-				</table>
+-			</div>
+-		</div>
+-		
+-		<footer>
+-			<span id="name">@软件10班 SK小组版权所有</span>
+-		</footer>
+-	
+-		<script type="text/javascript" src="WEB-INF/js/jquery-3.5.1.js"></script>
+-		<script src="WEB-INF/js/bootstrap.js" type="text/javascript"></script>
+-		<script type="text/javascript" src="WEB-INF/js/vue.js"></script>
+-		<script type="text/javascript">
+-			// $(function(){
+-			// 	vue = new Vue({
+-			// 		el:"#hello",
+-			// 		data:{
+-			// 			"hello":"helloVue"
+-			// 		}
+-			// 	});
+-			// });
+-			
+-		</script>
+-	</body>
+-</html>
+Index: .idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml	(date 1601468514310)
++++ .idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml	(date 1601468514310)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: commons-fileupload:commons-fileupload:1.2.2">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: web/WEB-INF/css/home.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>*{\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n}\r\na{\r\n\ttext-decoration: none;\r\n\tcolor: #000000;\r\n}\r\n\r\n/* 顶部 */\r\n.header_container{\r\n\tbackground-color: #dddddd;\r\n}\r\n.header_row{\r\n\theight: 30px;\r\n\tpadding-left: 18%;\r\n}\r\n.header_left li,.header_right li{\r\n\tline-height: 30px;\r\n\tfloat: left;\r\n\tmargin-left: 10px;\r\n}\r\n.header_left li:first-child,.header_right li:first-child{\r\n\tmargin-left: 0;\r\n}\r\n.header_right a{\r\n\tpadding-right: 3px;\r\n\tborder-right: 1px solid;\r\n}\r\n.header_right li:last-child a{\r\n\tborder: none;\r\n}\r\n\r\n/* 主体 */\r\n/* 主体——搜索 */\r\n.mysearch_row{\r\n\tpadding-left: 20%;\r\n\tmargin-top: 10px;\r\n}\r\n.mysearch_left{\r\n\theight: 80px;\r\n}\r\n.mysearch_left a{\r\n\tline-height: 80px;\r\n\tcolor: red;\r\n\tfont-weight: bolder;\r\n\tfont-size: 19px;\r\n\tpadding-left: 30px;\r\n}\r\n.mysearch_left a:hover{\r\n\ttext-decoration: none;\r\n\tcursor: pointer;\r\n}\r\n.mysearch_right{\r\n\theight: 80px;\r\n}\r\n.mysearch_right .my_input{\r\n\tmargin-top: 22px;\r\n}\r\n.my_input input,.my_input button{\r\n\tborder-color: red;\r\n}\r\n.my_input button{\r\n\tbackground-color: red;\r\n\tcolor: white;\r\n}\r\n.my_input button:hover{\r\n\tbackground-color: red;\r\n}\r\n.my_input button:active{\r\n\tbackground-color: red;\r\n}\r\n/* 主体——导航 */\r\n.nav_row{\r\n\tpadding-left: 15%;\r\n\tmargin-top: 10px;\r\n}\r\n.nav_row h3{\r\n\twidth: 100%;\r\n\theight: 50px;\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\tline-height: 50px;\r\n\tfont-size: 18px;\r\n\tmargin: 0;\r\n}\r\n.nav_row ul{\r\n\tpadding-top: 0;\r\n\tmargin-bottom: 0;\r\n}\r\n.nav_row li{\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\theight: 100px;\r\n\tbackground-color: gainsboro;\r\n}\r\n.nav_row li a{\r\n\tmargin-left: 5px;\r\n\tfont-size: 12px;\r\n}\r\n.nav_row li a:first-child{\r\n\tdisplay: block;\r\n\tfont-size: 15px;\r\n\tfont-weight: bolder;\r\n}\r\n.nav_row li a:nth-child(2){\r\n\tborder-right: 2px solid;\r\n\tpadding-right: 5px;\r\n}\r\n.nav_row li a:nth-child(5){\r\n\tborder-right: 2px solid;\r\n\tpadding-right: 5px;\r\n}\r\n.nav_row li:nth-child(2) a:nth-child(2){\r\n\tborder-right: none;\r\n}\r\n.nav_row li:nth-child(2) a:nth-child(6){\r\n\tborder-right: 2px solid;\r\n\tpadding-right: 5px;\r\n}\r\n.my_carousel{\r\n\tpadding: 0;\r\n}\r\n/* 主体——商品展示 */\r\n.product_title{\r\n\tpadding-left: 15%;\r\n\tmargin-top: 10px;\r\n}\r\n.product_title h3{\r\n\tcolor:rgb(224, 149, 63);\r\n}\r\n.product_title>div{\r\n\tborder-bottom: 1px solid rgb(218, 164, 18);\r\n}\r\n.product{\r\n\tpadding-left: 15%;\r\n\tmargin-top: 10px;\r\n}\r\n.product_pic{\r\n\tmargin-left: 40px;\r\n}\r\n.product h3{\r\n\tcolor: red;\r\n\tfont-weight: bolder;\r\n}\r\n/* 底部 */\r\n.footer_container{\r\n\tbackground-color: black;\r\n}\r\n.footer_row{\r\n\tpadding-left: 15%;\r\n\tpadding-top: 0;\r\n\theight: 20px;\r\n\ttext-align: center;\r\n}\r\n.footer_container span{\r\n\tfont-size: 10px;\r\n\tline-height: 20px;\r\n\tcolor: white;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- web/WEB-INF/css/home.css	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
++++ web/WEB-INF/css/home.css	(date 1601600772484)
+@@ -45,7 +45,7 @@
+ 	line-height: 80px;
+ 	color: red;
+ 	font-weight: bolder;
+-	font-size: 19px;
++	font-size: 25px;
+ 	padding-left: 30px;
+ }
+ .mysearch_left a:hover{
+@@ -71,6 +71,7 @@
+ .my_input button:active{
+ 	background-color: red;
+ }
++
+ /* 主体——导航 */
+ .nav_row{
+ 	padding-left: 15%;
+@@ -145,6 +146,12 @@
+ 	color: red;
+ 	font-weight: bolder;
+ }
++.product h6>a{
++	font-weight: bold;
++}
++.pro:hover{
++	cursor: pointer;
++}
+ /* 底部 */
+ .footer_container{
+ 	background-color: black;
+Index: .idea/libraries/Maven__org_springframework_spring_core_3_2_13_RELEASE.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_core_3_2_13_RELEASE.xml	(date 1601468514321)
++++ .idea/libraries/Maven__org_springframework_spring_core_3_2_13_RELEASE.xml	(date 1601468514321)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-core:3.2.13.RELEASE">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.2.13.RELEASE/spring-core-3.2.13.RELEASE.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.2.13.RELEASE/spring-core-3.2.13.RELEASE-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.2.13.RELEASE/spring-core-3.2.13.RELEASE-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: PhoneMallSystem.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"FacetManager\">\r\n    <facet type=\"web\" name=\"Web\">\r\n      <configuration>\r\n        <descriptors>\r\n          <deploymentDescriptor name=\"web.xml\" url=\"file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml\" />\r\n        </descriptors>\r\n        <webroots>\r\n          <root url=\"file://$MODULE_DIR$/src/main/webapp\" relative=\"/\" />\r\n        </webroots>\r\n      </configuration>\r\n    </facet>\r\n  </component>\r\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_1_7\">\r\n    <output url=\"file://$MODULE_DIR$/target/classes\" />\r\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\" />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: junit:junit:4.11\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.hamcrest:hamcrest-core:1.3\" level=\"project\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- PhoneMallSystem.iml	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
++++ PhoneMallSystem.iml	(date 1601468513783)
+@@ -4,23 +4,59 @@
+     <facet type="web" name="Web">
+       <configuration>
+         <descriptors>
+-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
++          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+         </descriptors>
+         <webroots>
+-          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
++          <root url="file://$MODULE_DIR$/web" relative="/" />
+         </webroots>
++        <sourceRoots />
+       </configuration>
+     </facet>
++    <facet type="Spring" name="Spring">
++      <configuration />
++    </facet>
+   </component>
+-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+     <output url="file://$MODULE_DIR$/target/classes" />
+     <output-test url="file://$MODULE_DIR$/target/test-classes" />
+     <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
++      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+       <excludeFolder url="file://$MODULE_DIR$/target" />
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.2.2" level="project" />
++    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.31" level="project" />
++    <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.2.13.RELEASE" level="project" />
++    <orderEntry type="library" name="Maven: org.springframework:spring-context:3.2.13.RELEASE" level="project" />
++    <orderEntry type="library" name="Maven: org.springframework:spring-core:3.2.13.RELEASE" level="project" />
++    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.3" level="project" />
++    <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.2.13.RELEASE" level="project" />
++    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
++    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.6.9" level="project" />
++    <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.2.13.RELEASE" level="project" />
++    <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:1.2.0" level="project" />
++    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.2.13.RELEASE" level="project" />
++    <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.13.RELEASE" level="project" />
++    <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
++    <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
++    <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.6" level="project" />
++    <orderEntry type="library" name="Maven: org.springframework:spring-web:3.2.13.RELEASE" level="project" />
++    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.2.13.RELEASE" level="project" />
++    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
++    <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
++    <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:4.3.2.Final" level="project" />
++    <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.1.0.CR2" level="project" />
++    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
++    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
++    <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.2.2" level="project" />
++    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
++    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.13" level="project" />
++    <orderEntry type="library" name="Maven: org.mybatis.generator:mybatis-generator-core:1.4.0" level="project" />
++    <orderEntry type="library" name="Maven: javax.annotation:javax.annotation-api:1.3.2" level="project" />
++    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_4_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_4_0.xml	(date 1601468513756)
++++ .idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_4_0.xml	(date 1601468513756)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.mybatis.generator:mybatis-generator-core:1.4.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/generator/mybatis-generator-core/1.4.0/mybatis-generator-core-1.4.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/generator/mybatis-generator-core/1.4.0/mybatis-generator-core-1.4.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/generator/mybatis-generator-core/1.4.0/mybatis-generator-core-1.4.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__log4j_log4j_1_2_16.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__log4j_log4j_1_2_16.xml	(date 1601468513747)
++++ .idea/libraries/Maven__log4j_log4j_1_2_16.xml	(date 1601468513747)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: log4j:log4j:1.2.16">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.16/log4j-1.2.16.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.16/log4j-1.2.16-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml	(date 1601468514368)
++++ .idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml	(date 1601468514368)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: commons-dbcp:commons-dbcp:1.4">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_aop_3_2_13_RELEASE.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_aop_3_2_13_RELEASE.xml	(date 1601468514381)
++++ .idea/libraries/Maven__org_springframework_spring_aop_3_2_13_RELEASE.xml	(date 1601468514381)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-aop:3.2.13.RELEASE">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.13.RELEASE/spring-aop-3.2.13.RELEASE.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.13.RELEASE/spring-aop-3.2.13.RELEASE-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.13.RELEASE/spring-aop-3.2.13.RELEASE-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_context_3_2_13_RELEASE.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_context_3_2_13_RELEASE.xml	(date 1601468514335)
++++ .idea/libraries/Maven__org_springframework_spring_context_3_2_13_RELEASE.xml	(date 1601468514335)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-context:3.2.13.RELEASE">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.13.RELEASE/spring-context-3.2.13.RELEASE.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.13.RELEASE/spring-context-3.2.13.RELEASE-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.13.RELEASE/spring-context-3.2.13.RELEASE-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"PhoneMallSystem\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n    <bytecodeTargetLevel>\r\n      <module name=\"PhoneMallSystem\" target=\"1.5\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
++++ .idea/compiler.xml	(date 1601468513925)
+@@ -10,7 +10,7 @@
+       </profile>
+     </annotationProcessing>
+     <bytecodeTargetLevel>
+-      <module name="PhoneMallSystem" target="1.5" />
++      <module name="PhoneMallSystem" target="8" />
+     </bytecodeTargetLevel>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_jdbc_3_2_13_RELEASE.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_jdbc_3_2_13_RELEASE.xml	(date 1601468514348)
++++ .idea/libraries/Maven__org_springframework_spring_jdbc_3_2_13_RELEASE.xml	(date 1601468514348)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-jdbc:3.2.13.RELEASE">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.2.13.RELEASE/spring-jdbc-3.2.13.RELEASE.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.2.13.RELEASE/spring-jdbc-3.2.13.RELEASE-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.2.13.RELEASE/spring-jdbc-3.2.13.RELEASE-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_expression_3_2_13_RELEASE.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_expression_3_2_13_RELEASE.xml	(date 1601468514418)
++++ .idea/libraries/Maven__org_springframework_spring_expression_3_2_13_RELEASE.xml	(date 1601468514418)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-expression:3.2.13.RELEASE">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/3.2.13.RELEASE/spring-expression-3.2.13.RELEASE.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/3.2.13.RELEASE/spring-expression-3.2.13.RELEASE-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/3.2.13.RELEASE/spring-expression-3.2.13.RELEASE-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_beans_3_2_13_RELEASE.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_beans_3_2_13_RELEASE.xml	(date 1601468514431)
++++ .idea/libraries/Maven__org_springframework_spring_beans_3_2_13_RELEASE.xml	(date 1601468514431)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-beans:3.2.13.RELEASE">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.2.13.RELEASE/spring-beans-3.2.13.RELEASE.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.2.13.RELEASE/spring-beans-3.2.13.RELEASE-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.2.13.RELEASE/spring-beans-3.2.13.RELEASE-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml	(date 1601468514393)
++++ .idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml	(date 1601468514393)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.jboss.logging:jboss-logging:3.1.0.CR2">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_0.xml	(date 1601468514405)
++++ .idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_0.xml	(date 1601468514405)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.mybatis:mybatis-spring:1.2.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.0/mybatis-spring-1.2.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.0/mybatis-spring-1.2.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.0/mybatis-spring-1.2.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_web_3_2_13_RELEASE.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_web_3_2_13_RELEASE.xml	(date 1601468514299)
++++ .idea/libraries/Maven__org_springframework_spring_web_3_2_13_RELEASE.xml	(date 1601468514299)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-web:3.2.13.RELEASE">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.13.RELEASE/spring-web-3.2.13.RELEASE.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.13.RELEASE/spring-web-3.2.13.RELEASE-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.13.RELEASE/spring-web-3.2.13.RELEASE-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: web/WEB-INF/css/register.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>*{\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\ttext-decoration: none;\r\n\tlist-style: none;\r\n}\r\nheader{\r\n\theight: 50px;\r\n}\r\nheader>h2{\r\n\tmargin-left: 25%;\r\n\tline-height: 50px;\r\n\tcolor: red;\r\n}\r\n#main{\r\n\tposition: relative;\r\n\twidth: 100%;\r\n\theight: 500px;\r\n\tbackground-color: red;\r\n}\r\n#table{\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\tright: 0;\r\n\tmargin: auto;\r\n\twidth: 350px;\r\n\theight: 450px;\r\n\tbackground-color: white;\r\n\ttext-align: center;\r\n}\r\n#table > table{\r\n\tmargin: 0 auto;\r\n\tmargin-top: 35px;\r\n\tborder: none;\r\n}\r\n\t\r\n#table > table th{\r\n\tfont-size: 20px;\r\n\tborder-bottom: 1px solid gray;\r\n}\r\n#table > table input{\r\n\toutline-style: none;\r\n\tmargin-top: 16px;\r\n\theight: 35px;\r\n\twidth: 280px;\r\n\tborder-radius: 5px;\r\n\tborder: 1px solid gainsboro;\r\n\tbox-sizing: border-box;\r\n\tpadding-left: 23px;\r\n\tcursor: pointer;\r\n}\r\n#table > table input:focus{\r\n\tborder-color: #66AFE9;\r\n}\r\n#table > table button{\r\n\tmargin-top: 10px;\r\n\theight: 30px;\r\n\twidth: 280px;\r\n\tborder: none;\r\n\tborder-radius: 5px;\r\n\tbackground-color: orangered;\r\n\tcursor: pointer;\r\n}\r\n#table > table:last-child td{\r\n\ttext-align: left;\r\n}\r\n#table > table:last-child a{\r\n\tcolor: black;\r\n\tfont-size: 10px;\r\n\tcursor: pointer;\r\n}\r\n#table > table:last-child a:hover{\r\n\tcolor: red;\r\n}\r\nfooter{\r\n\ttext-align: center;\r\n\twidth: 100%;\r\n\theight: 20px;\r\n}\r\nfooter span{\r\n\tfont-size: 10px;\r\n\tline-height: 20px;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- web/WEB-INF/css/register.css	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
++++ web/WEB-INF/css/register.css	(date 1601469589426)
+@@ -74,6 +74,9 @@
+ #table > table:last-child a:hover{
+ 	color: red;
+ }
++.error{
++	color: red;
++}
+ footer{
+ 	text-align: center;
+ 	width: 100%;
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/jarRepositories.xml	(date 1601468514288)
++++ .idea/jarRepositories.xml	(date 1601468514288)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/java/com/qst/controller/UserController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.qst.controller;\r\n\r\nimport com.alibaba.fastjson.JSON;\r\nimport com.qst.enums.UserStatus;\r\nimport com.qst.pojo.User;\r\nimport com.qst.service.UserService;\r\nimport com.qst.util.MD5;\r\nimport org.apache.ibatis.annotations.Param;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.stereotype.Controller;\r\nimport org.springframework.web.bind.annotation.RequestMapping;\r\nimport org.springframework.web.bind.annotation.RequestMethod;\r\nimport org.springframework.web.bind.annotation.RequestParam;\r\nimport org.springframework.web.bind.annotation.ResponseBody;\r\n\r\nimport javax.servlet.http.HttpSession;\r\n\r\n/**\r\n * @Author: XiPeng\r\n * @Description:\r\n * @Date: Create in 17:58 2020/9/29\r\n * @Modified by:\r\n */\r\n@Controller\r\npublic class UserController {\r\n    @Autowired\r\n    UserService userService;\r\n\r\n    @RequestMapping(value = \"/register\",method = RequestMethod.POST)\r\n    @ResponseBody\r\n    public String register(HttpSession session,\r\n                           @RequestParam(value = \"loginName\",required = false) String userName,\r\n                           @RequestParam(value = \"password\",required = false) String password,\r\n                           @RequestParam(value = \"userName\",required = false) String roleName,\r\n                           @RequestParam(value = \"phone\",required = false) String phone){\r\n        User user = new User();\r\n        user.setUsername(userName);\r\n        user.setPassword(password);\r\n        user.setRealname(roleName);\r\n        user.setPhone(phone);\r\n        int register = userService.register(user);\r\n        if (register==1){\r\n            session.setAttribute(\"status\",JSON.toJSONString(UserStatus.REGISTER_SUCCESS));\r\n        }\r\n        else {\r\n            session.setAttribute(\"status\",JSON.toJSONString(UserStatus.REGISTER_FAIL));\r\n        }\r\n\r\n        return \"denglu\";\r\n    }\r\n\r\n    @RequestMapping(\"/denglu\")\r\n    public String denglu(HttpSession session,\r\n            @RequestParam(value = \"loginName\",required = false) String userName,\r\n                         @RequestParam(value = \"password\",required = false) String password){\r\n        User user = new User();\r\n        user.setUsername(userName);\r\n        user.setPassword(password);\r\n        User login = userService.login(user);\r\n        login.setPassword(null);\r\n//        判断角色\r\n        session.setAttribute(\"user\",JSON.toJSON(login));\r\n        return \"home\";\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/com/qst/controller/UserController.java	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
++++ src/main/java/com/qst/controller/UserController.java	(date 1601468514007)
+@@ -26,7 +26,7 @@
+     @Autowired
+     UserService userService;
+ 
+-    @RequestMapping(value = "/register",method = RequestMethod.POST)
++    @RequestMapping(value = "/register")
+     @ResponseBody
+     public String register(HttpSession session,
+                            @RequestParam(value = "loginName",required = false) String userName,
+Index: src/main/resources/SpringMVC-servlet.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n       xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n       xmlns:mvc=\"http://www.springframework.org/schema/mvc\"\r\n       xmlns:p=\"http://www.springframework.org/schema/p\"\r\n       xmlns:context=\"http://www.springframework.org/schema/context\"\r\n       xmlns:util=\"http://www.springframework.org/schema/util\"\r\n       xsi:schemaLocation=\"http://www.springframework.org/schema/beans\r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\r\n        http://www.springframework.org/schema/context\r\n        http://www.springframework.org/schema/context/spring-context.xsd\r\n        http://www.springframework.org/schema/mvc\r\n        http://www.springframework.org/schema/mvc/spring-mvc.xsd\r\n        http://www.springframework.org/schema/util\r\n        http://www.springframework.org/schema/util/spring-util.xsd\">\r\n<context:component-scan base-package=\"com.qst.controller\"/>\r\n<!--    一键式把controller交给spring管理-->\r\n    <mvc:annotation-driven>\r\n        <mvc:message-converters>\r\n<!--            json乱码-->\r\n            <bean class=\"org.springframework.http.converter.StringHttpMessageConverter\">\r\n                <property name=\"supportedMediaTypes\">\r\n                    <list>\r\n                        <value>application/json;charset=utf-8</value>\r\n                    </list>\r\n                </property>\r\n            </bean>\r\n<!--            日期乱码-->\r\n            <bean class=\"com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter\">\r\n                <property name=\"supportedMediaTypes\">\r\n                    <list>\r\n                        <value>text/html;charset=utf-8</value>\r\n                        <value>application/json;charset=utf-8</value>\r\n                    </list>\r\n                </property>\r\n            </bean>\r\n        </mvc:message-converters>\r\n    </mvc:annotation-driven>\r\n\r\n<!---->\r\n<!--    根据beannameurlhandlermapping处理映射器找对应控制器-->\r\n<!--    <bean id=\"/index.html\" class=\"com.qst.controller.IndexController\"/>-->\r\n<!--视图解析器-->\r\n    <bean class=\"org.springframework.web.servlet.view.InternalResourceViewResolver\">\r\n        <property name=\"prefix\" value=\"/WEB-INF/\"/>\r\n        <property name=\"suffix\" value=\".html\"/>\r\n    </bean>\r\n<!--    <mvc:resources mapping=\"/statics/**\" location=\"/statics/\"/>-->\r\n<!--    <mvc:default-servlet-handler/>-->\r\n<!--    全局异常-->\r\n    <bean class=\"org.springframework.web.servlet.handler.SimpleMappingExceptionResolver\">\r\n        <property name=\"exceptionMappings\">\r\n            <props>\r\n<!--key表示异常抛出类型，error表示跳转页面-->\r\n                <prop key=\"java.lang.RuntimeException\">error</prop>\r\n            </props>\r\n        </property>\r\n\r\n    </bean>\r\n    <!--        文件上传-->\r\n    <bean id=\"multipartResolver\" class=\"org.springframework.web.multipart.commons.CommonsMultipartResolver\">\r\n<!--        单位-字节-->\r\n        <property name=\"maxInMemorySize\" value=\"5000000\"/>\r\n        <property name=\"defaultEncoding\" value=\"utf-8\"/>\r\n    </bean>\r\n\r\n<!--    配置字符过滤-->\r\n<!--    <mvc:annotation-driven>-->\r\n<!--        <mvc:message-converters register-defaults=\"true\">-->\r\n<!--            <bean class=\"org.springframework.http.converter.StringHttpMessageConverter\">-->\r\n<!--                <property name=\"supportedMediaTypes\">-->\r\n<!--                    <list>-->\r\n<!--                        <value>text/html;charset=UTF-8</value>-->\r\n<!--                        <value>application/json;charset=UTF-8</value>-->\r\n<!--                    </list>-->\r\n<!--                </property>-->\r\n<!--            </bean>-->\r\n<!--        </mvc:message-converters>-->\r\n<!--    </mvc:annotation-driven>-->\r\n<!--文件上传配置-->\r\n\r\n\r\n\r\n</beans>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/SpringMVC-servlet.xml	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
++++ src/main/resources/SpringMVC-servlet.xml	(date 1601468514038)
+@@ -48,15 +48,15 @@
+ <!--    <mvc:resources mapping="/statics/**" location="/statics/"/>-->
+ <!--    <mvc:default-servlet-handler/>-->
+ <!--    全局异常-->
+-    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+-        <property name="exceptionMappings">
+-            <props>
+-<!--key表示异常抛出类型，error表示跳转页面-->
+-                <prop key="java.lang.RuntimeException">error</prop>
+-            </props>
+-        </property>
++<!--    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
++<!--        <property name="exceptionMappings">-->
++<!--            <props>-->
++<!--&lt;!&ndash;key表示异常抛出类型，error表示跳转页面&ndash;&gt;-->
++<!--                <prop key="java.lang.RuntimeException">error</prop>-->
++<!--            </props>-->
++<!--        </property>-->
+ 
+-    </bean>
++<!--    </bean>-->
+     <!--        文件上传-->
+     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+ <!--        单位-字节-->
+Index: .idea/libraries/Maven__commons_pool_commons_pool_1_6.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__commons_pool_commons_pool_1_6.xml	(date 1601468514257)
++++ .idea/libraries/Maven__commons_pool_commons_pool_1_6.xml	(date 1601468514257)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: commons-pool:commons-pool:1.6">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.6/commons-pool-1.6.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.6/commons-pool-1.6-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.6/commons-pool-1.6-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__aopalliance_aopalliance_1_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__aopalliance_aopalliance_1_0.xml	(date 1601468514235)
++++ .idea/libraries/Maven__aopalliance_aopalliance_1_0.xml	(date 1601468514235)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: aopalliance:aopalliance:1.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_alibaba_fastjson_1_2_13.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_alibaba_fastjson_1_2_13.xml	(date 1601468514279)
++++ .idea/libraries/Maven__com_alibaba_fastjson_1_2_13.xml	(date 1601468514279)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.alibaba:fastjson:1.2.13">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.13/fastjson-1.2.13.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.13/fastjson-1.2.13-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.13/fastjson-1.2.13-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__commons_lang_commons_lang_2_6.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__commons_lang_commons_lang_2_6.xml	(date 1601468514157)
++++ .idea/libraries/Maven__commons_lang_commons_lang_2_6.xml	(date 1601468514157)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: commons-lang:commons-lang:2.6">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__commons_io_commons_io_2_4.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__commons_io_commons_io_2_4.xml	(date 1601468514135)
++++ .idea/libraries/Maven__commons_io_commons_io_2_4.xml	(date 1601468514135)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: commons-io:commons-io:2.4">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_tx_3_2_13_RELEASE.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_tx_3_2_13_RELEASE.xml	(date 1601468514184)
++++ .idea/libraries/Maven__org_springframework_spring_tx_3_2_13_RELEASE.xml	(date 1601468514184)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-tx:3.2.13.RELEASE">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.2.13.RELEASE/spring-tx-3.2.13.RELEASE.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.2.13.RELEASE/spring-tx-3.2.13.RELEASE-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.2.13.RELEASE/spring-tx-3.2.13.RELEASE-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml	(date 1601468514166)
++++ .idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml	(date 1601468514166)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: commons-logging:commons-logging:1.1.3">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/artifacts/PhoneMallSystem_war_exploded.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/artifacts/PhoneMallSystem_war_exploded.xml	(date 1601468514019)
++++ .idea/artifacts/PhoneMallSystem_war_exploded.xml	(date 1601468514019)
+@@ -0,0 +1,44 @@
++<component name="ArtifactManager">
++  <artifact type="exploded-war" name="PhoneMallSystem:war exploded">
++    <output-path>$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded</output-path>
++    <root id="root">
++      <element id="directory" name="WEB-INF">
++        <element id="directory" name="classes">
++          <element id="module-output" name="PhoneMallSystem" />
++        </element>
++        <element id="directory" name="lib">
++          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.2.2" />
++          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.31" />
++          <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.13.RELEASE" />
++          <element id="library" level="project" name="Maven: org.springframework:spring-context:3.2.13.RELEASE" />
++          <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.13.RELEASE" />
++          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.3" />
++          <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.13.RELEASE" />
++          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
++          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.6.9" />
++          <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.2.13.RELEASE" />
++          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.2.0" />
++          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.2.13.RELEASE" />
++          <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.2.13.RELEASE" />
++          <element id="library" level="project" name="Maven: log4j:log4j:1.2.16" />
++          <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
++          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.6" />
++          <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.13.RELEASE" />
++          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.2.13.RELEASE" />
++          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
++          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:4.3.2.Final" />
++          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.0.CR2" />
++          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.0.0.GA" />
++          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
++          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
++          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
++          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.13" />
++          <element id="library" level="project" name="Maven: org.mybatis.generator:mybatis-generator-core:1.4.0" />
++          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.3.2" />
++          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.11" />
++        </element>
++      </element>
++      <element id="javaee-facet-resources" facet="PhoneMallSystem/web/Web" />
++    </root>
++  </artifact>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_webmvc_3_2_13_RELEASE.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_webmvc_3_2_13_RELEASE.xml	(date 1601468514093)
++++ .idea/libraries/Maven__org_springframework_spring_webmvc_3_2_13_RELEASE.xml	(date 1601468514093)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-webmvc:3.2.13.RELEASE">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.13.RELEASE/spring-webmvc-3.2.13.RELEASE.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.13.RELEASE/spring-webmvc-3.2.13.RELEASE-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.13.RELEASE/spring-webmvc-3.2.13.RELEASE-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_servlet_jstl_1_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_servlet_jstl_1_2.xml	(date 1601468514079)
++++ .idea/libraries/Maven__javax_servlet_jstl_1_2.xml	(date 1601468514079)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: javax.servlet:jstl:1.2">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml	(date 1601468513881)
++++ .idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml	(date 1601468513881)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: javax.servlet:javax.servlet-api:3.1.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_mybatis_mybatis_3_2_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_mybatis_mybatis_3_2_2.xml	(date 1601468513873)
++++ .idea/libraries/Maven__org_mybatis_mybatis_3_2_2.xml	(date 1601468513873)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.mybatis:mybatis:3.2.2">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.2/mybatis-3.2.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.2/mybatis-3.2.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.2/mybatis-3.2.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml	(date 1601468513979)
++++ .idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml	(date 1601468513979)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: javax.validation:validation-api:1.0.0.GA">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_aspectj_aspectjweaver_1_6_9.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_aspectj_aspectjweaver_1_6_9.xml	(date 1601468513969)
++++ .idea/libraries/Maven__org_aspectj_aspectjweaver_1_6_9.xml	(date 1601468513969)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.aspectj:aspectjweaver:1.6.9">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.6.9/aspectjweaver-1.6.9.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.6.9/aspectjweaver-1.6.9-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.6.9/aspectjweaver-1.6.9-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__mysql_mysql_connector_java_5_1_31.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__mysql_mysql_connector_java_5_1_31.xml	(date 1601468513823)
++++ .idea/libraries/Maven__mysql_mysql_connector_java_5_1_31.xml	(date 1601468513823)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: mysql:mysql-connector-java:5.1.31">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.31/mysql-connector-java-5.1.31.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.31/mysql-connector-java-5.1.31-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.31/mysql-connector-java-5.1.31-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__commons_codec_commons_codec_1_11.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__commons_codec_commons_codec_1_11.xml	(date 1601468513814)
++++ .idea/libraries/Maven__commons_codec_commons_codec_1_11.xml	(date 1601468513814)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: commons-codec:commons-codec:1.11">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: web/home.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\">\r\n\t\t<title></title>\r\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.css\"/>\r\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"WEB-INF/css/home.css\"/>\r\n\t</head>\r\n\t<body>\r\n\r\n\t\t<!-- 头部 -->\r\n\t\t<div class=\"container-fluid header_container\">\r\n\t\t\t<div class=\"row header_row\">\r\n\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t<ul class=\"header_left\">\r\n\t\t\t\t\t\t<li>欢迎您:<span id=\"userName\">ssssss<span></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">退出</a></li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-5\">\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-5\">\r\n\t\t\t\t\t<ul class=\"header_right\">\r\n\t\t\t\t\t\t<li><a href=\"#\"><span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span>&nbsp;购物车</a></li>\r\n\t\t\t\t\t\t<li><a href=\"#\"><span class=\"glyphicon glyphicon-list\" aria-hidden=\"true\"></span>&nbsp;我的订单</a></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">关于MyPhone</a></li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<!-- 主体 -->\r\n\t\t<div class=\"container-fluid body_container\">\r\n\t\t\t<!-- 搜索栏 -->\r\n\t\t\t<div class=\"row mysearch_row\">\r\n\t\t\t\t<div class=\"col-lg-2 mysearch_left\">\r\n\t\t\t\t\t<a>MyPhone</a>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-6 mysearch_right\">\r\n\t\t\t\t\t<div class=\"input-group my_input\">\r\n\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" placeholder=\"请输入商品名称\">\r\n\t\t\t\t\t\t<span class=\"input-group-btn\">\r\n\t\t\t\t\t\t\t<button class=\"btn btn-default\" type=\"button\">搜索</button>\r\n\t\t\t\t\t\t</span>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<!-- 导航 -->\r\n\t\t\t<div class=\"row nav_row\">\r\n\t\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t\t\t<h3>热门手机</h3>\r\n\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t<li class=\"phone\">\r\n\t\t\t\t\t\t\t<a href=\"#\">华为</a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>P40 Pro</span></a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>nova 5 Pro</span></a><br>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>Mate 30</span></a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>荣耀 30s</span></a>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li class=\"phone\">\r\n\t\t\t\t\t\t\t<a href=\"#\">小米</a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>10 至尊纪念版</span></a><br>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>Redmi K30至尊纪念版</span></a><br>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>Redmi 10X</span></a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>Redmi 8A</span></a>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li class=\"phone\">\r\n\t\t\t\t\t\t\t<a href=\"#\">vivo</a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>IQoo Neo3</span></a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>IQoo Z1</span></a><br>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>IQoo S7</span></a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>X50</span></a>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t<li class=\"phone\">\r\n\t\t\t\t\t\t\t<a href=\"#\">苹果</a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>11 Pro Max</span></a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>XS Max</span></a><br>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>SE第二代</span></a>\r\n\t\t\t\t\t\t\t<a href=\"#\"><span>8 plus</span></a>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"col-lg-8 my_carousel\">\r\n\t\t\t\t\t<div id=\"carousel-example-generic\" class=\"carousel slide\" data-ride=\"carousel\" style=\"width: 100%; height: 100%;\">\r\n\t\t\t\t\t\t<!-- Wrapper for slides -->\r\n\t\t\t\t\t\t<div class=\"carousel-inner\" role=\"listbox\">\r\n\t\t\t\t\t\t\t<div class=\"item active\">\r\n\t\t\t\t\t\t\t<img src=\"WEB-INF/img/carousel_1.jpg\" style=\"height: 450px\" alt=\"...\">\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"item\">\r\n\t\t\t\t\t\t\t<img src=\"WEB-INF/img/carousel_2.jpg\" style=\"height: 450px\" alt=\"...\">\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"item\">\r\n\t\t\t\t\t\t\t<img src=\"WEB-INF/img/carousel_3.jpg\" style=\"height: 450px\" alt=\"...\">\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"item\">\r\n\t\t\t\t\t\t\t<img src=\"WEB-INF/img/carousel_4.jpg\" style=\"height: 450px\" alt=\"...\">\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"item\">\r\n\t\t\t\t\t\t\t<img src=\"WEB-INF/img/carousel_5.jpg\" style=\"height: 450px\" alt=\"...\">\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\r\n\t\t\t\t\t\t<!-- Controls -->\r\n\t\t\t\t\t\t<a class=\"left carousel-control\" href=\"#carousel-example-generic\" role=\"button\" data-slide=\"prev\">\r\n\t\t\t\t\t\t\t<span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>\r\n\t\t\t\t\t\t\t<span class=\"sr-only\">Previous</span>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t<a class=\"right carousel-control\" href=\"#carousel-example-generic\" role=\"button\" data-slide=\"next\">\r\n\t\t\t\t\t\t\t<span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>\r\n\t\t\t\t\t\t\t<span class=\"sr-only\">Next</span>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<!-- 商品展示 -->\r\n\t\t\t<!-- 1、华为商品 -->\r\n\t\t\t<div class=\"row product_title\">\r\n\t\t\t\t<div class=\"col-lg-10 \">\r\n\t\t\t\t\t<h3>华为</h3>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"row product\">\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/HuaWei/p40_pro/P40_Pro.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥5899.00</h3>\r\n\t\t\t\t\t\t\t<h6>华为 P40 Pro 麒麟990 5G SoC芯片 5000万超感知莱卡四摄</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/HuaWei/nova 5/nova5_Pro.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥2099.00</h3>\r\n\t\t\t\t\t\t\t<h6>华为 nova5 Pro 前置3200万人像超级夜景4800万AI四摄麒麟</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/HuaWei/Mate_30/Mate30.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥4499.00</h3>\r\n\t\t\t\t\t\t\t<h6>华为 Mate30 5G 麒麟990 4000万感光徕卡影响双超级快充</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/HuaWei/30S/30S.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥2389.00</h3>\r\n\t\t\t\t\t\t\t<h6>华为荣耀30S 麒麟820 5G芯片 3倍光学变焦 20倍数字变焦</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<!-- 2、小米商品 -->\r\n\t\t\t<div class=\"row product_title\">\r\n\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t<h3>小米</h3>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"row product\">\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/MI/mi_10MAX/MI10.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥5999.00</h3>\r\n\t\t\t\t\t\t\t<h6>小米10 至尊纪念版 双模5G 骁龙865 120HZ高刷新率 120倍长焦</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/MI/Redmi_10X/Redmi_10X.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥999.00</h3>\r\n\t\t\t\t\t\t\t<h6>Redmi 10X 4G手机 G85游戏芯 4800万超清四摄 小孔全面屏</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/MI/Redmi_K30/Rednu_k30MAX.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥2199.00</h3>\r\n\t\t\t\t\t\t\t<h6>Redmi K30 至尊纪念版 双模5G手机 天玑1000plus旗舰芯片</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/MI/Redmi_8A/Redmi_8A.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥699.00</h3>\r\n\t\t\t\t\t\t\t<h6>Redmi 8A 4G手机 5000mAh大电量 大字体大内存 骁龙8核处理器</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<!-- 3、vivo商品 -->\r\n\t\t\t<div class=\"row product_title\">\r\n\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t<h3>vivo</h3>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"row product\">\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/vivo/IPOO_Neo3/IQOO_Neo3.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥2998.00</h3>\r\n\t\t\t\t\t\t\t<h6>vivo IQOO Neo3 5G 8G+128G 夜幕黑 骁龙865 144Hz竞速屏</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/vivo/IQOO_Z1/IQOO_Z1.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥2198.00</h3>\r\n\t\t\t\t\t\t\t<h6>vivo IQOO Z1 5G 6G+128G 天玑1000plus旗舰芯片 144Hz竞速屏</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/vivo/s7/S7.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥2998.00</h3>\r\n\t\t\t\t\t\t\t<h6>vivo S7 5G 8G+128G 前置44000万AF双摄自拍 后置6400万超感光</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/vivo/X50/X50.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥2998.00</h3>\r\n\t\t\t\t\t\t\t<h6>vivo X50 5G 8G+128G 液氧 超感光后摄 后置4800万像素 90Hz超薄柔性屏</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<!-- 4、apple商品 -->\r\n\t\t\t<div class=\"row product_title\">\r\n\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t<h3>Apple</h3>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"row product\">\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/apple/11ProMax/11Pro_Max.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥10899.00</h3>\r\n\t\t\t\t\t\t\t<h6>Apple iphone 11 Pro Max 256GB 移动联通电信4G手机</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/apple/XS_Max/XS_Max.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥5399.00</h3>\r\n\t\t\t\t\t\t\t<h6>Apple iphone XS Max 256GB 移动联通电信4G手机</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/apple/SE/SE.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥3299.00</h3>\r\n\t\t\t\t\t\t\t<h6>Apple iphone SE 64GB 移动联通电信4G手机</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-lg-2 product_pic\">\r\n\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t<img src=\"WEB-INF/img/apple/8plus/8_plus.jpg\" alt=\"...\">\r\n\t\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t\t<h3>￥3799.00</h3>\r\n\t\t\t\t\t\t\t<h6>Apple iphone 8plus 128GB 移动联通电信4G手机</h6>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<!-- 底部 -->\r\n\t\t<div class=\"container-fluid footer_container\">\r\n\t\t\t<div class=\"row footer_row\">\r\n\t\t\t\t<div class=\"col-lg-10\">\r\n\t\t\t\t\t<span>@软件10班 SK小组版权所有</span>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<script type=\"text/javascript\" src=\"WEB-INF/js/jquery-3.5.1.js\"></script>\r\n\t\t<script src=\"WEB-INF/js/bootstrap.js\" type=\"text/javascript\"></script>\r\n\t\t<script type=\"text/javascript\" src=\"WEB-INF/js/vue.js\"></script>\r\n\t</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- web/home.html	(revision f8f1bc446172ea185f97aa42bf200c2837626382)
++++ web/home.html	(date 1601601962269)
+@@ -2,7 +2,7 @@
+ <html>
+ 	<head>
+ 		<meta charset="utf-8">
+-		<title></title>
++		<title>商城主页</title>
+ 		<link rel="stylesheet" type="text/css" href="WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+ 		<link rel="stylesheet" type="text/css" href="WEB-INF/css/home.css"/>
+ 	</head>
+@@ -125,38 +125,38 @@
+ 			</div>
+ 			<div class="row product">
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/HuaWei/p40_pro/P40_Pro.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥5899.00</h3>
+-							<h6>华为 P40 Pro 麒麟990 5G SoC芯片 5000万超感知莱卡四摄</h6>
++							<h6><a>华为 P40 Pro 麒麟990 5G SoC芯片 5000万超感知莱卡四摄</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/HuaWei/nova 5/nova5_Pro.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥2099.00</h3>
+-							<h6>华为 nova5 Pro 前置3200万人像超级夜景4800万AI四摄麒麟</h6>
++							<h6><a>华为 nova5 Pro 前置3200万人像超级夜景4800万AI四摄麒麟</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/HuaWei/Mate_30/Mate30.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥4499.00</h3>
+-							<h6>华为 Mate30 5G 麒麟990 4000万感光徕卡影响双超级快充</h6>
++							<h6><a>华为 Mate30 5G 麒麟990 4000万感光徕卡影响双超级快充</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/HuaWei/30S/30S.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥2389.00</h3>
+-							<h6>华为荣耀30S 麒麟820 5G芯片 3倍光学变焦 20倍数字变焦</h6>
++							<h6><a>华为荣耀30S 麒麟820 5G芯片 3倍光学变焦 20倍数字变焦</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+@@ -170,38 +170,38 @@
+ 			</div>
+ 			<div class="row product">
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/MI/mi_10MAX/MI10.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥5999.00</h3>
+-							<h6>小米10 至尊纪念版 双模5G 骁龙865 120HZ高刷新率 120倍长焦</h6>
++							<h6><a>小米10 至尊纪念版 双模5G 骁龙865 120HZ高刷新率 120倍长焦</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/MI/Redmi_10X/Redmi_10X.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥999.00</h3>
+-							<h6>Redmi 10X 4G手机 G85游戏芯 4800万超清四摄 小孔全面屏</h6>
++							<h6><a>Redmi 10X 4G手机 G85游戏芯 4800万超清四摄 小孔全面屏</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/MI/Redmi_K30/Rednu_k30MAX.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥2199.00</h3>
+-							<h6>Redmi K30 至尊纪念版 双模5G手机 天玑1000plus旗舰芯片</h6>
++							<h6><a>Redmi K30 至尊纪念版 双模5G手机 天玑1000plus旗舰芯片</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/MI/Redmi_8A/Redmi_8A.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥699.00</h3>
+-							<h6>Redmi 8A 4G手机 5000mAh大电量 大字体大内存 骁龙8核处理器</h6>
++							<h6><a>Redmi 8A 4G手机 5000mAh大电量 大字体大内存 骁龙8核处理器</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+@@ -215,38 +215,38 @@
+ 			</div>
+ 			<div class="row product">
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/vivo/IPOO_Neo3/IQOO_Neo3.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥2998.00</h3>
+-							<h6>vivo IQOO Neo3 5G 8G+128G 夜幕黑 骁龙865 144Hz竞速屏</h6>
++							<h6><a>vivo IQOO Neo3 5G 8G+128G 夜幕黑 骁龙865 144Hz竞速屏</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/vivo/IQOO_Z1/IQOO_Z1.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥2198.00</h3>
+-							<h6>vivo IQOO Z1 5G 6G+128G 天玑1000plus旗舰芯片 144Hz竞速屏</h6>
++							<h6><a>vivo IQOO Z1 5G 6G+128G 天玑1000plus旗舰芯片 144Hz竞速屏</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/vivo/s7/S7.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥2998.00</h3>
+-							<h6>vivo S7 5G 8G+128G 前置44000万AF双摄自拍 后置6400万超感光</h6>
++							<h6><a>vivo S7 5G 8G+128G 前置44000万AF双摄自拍 后置6400万超感光</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/vivo/X50/X50.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥2998.00</h3>
+-							<h6>vivo X50 5G 8G+128G 液氧 超感光后摄 后置4800万像素 90Hz超薄柔性屏</h6>
++							<h6><a>vivo X50 5G 8G+128G 液氧 超感光后摄 后置4800万像素 90Hz超薄柔性屏</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+@@ -260,38 +260,38 @@
+ 			</div>
+ 			<div class="row product">
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/apple/11ProMax/11Pro_Max.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥10899.00</h3>
+-							<h6>Apple iphone 11 Pro Max 256GB 移动联通电信4G手机</h6>
++							<h6><a>Apple iphone 11 Pro Max 256GB 移动联通电信4G手机</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/apple/XS_Max/XS_Max.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥5399.00</h3>
+-							<h6>Apple iphone XS Max 256GB 移动联通电信4G手机</h6>
++							<h6><a>Apple iphone XS Max 256GB 移动联通电信4G手机</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/apple/SE/SE.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥3299.00</h3>
+-							<h6>Apple iphone SE 64GB 移动联通电信4G手机</h6>
++							<h6><a>Apple iphone SE 64GB 移动联通电信4G手机</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2 product_pic">
+-					<div class="thumbnail">
++					<div class="thumbnail pro">
+ 						<img src="WEB-INF/img/apple/8plus/8_plus.jpg" alt="...">
+ 						<div class="caption">
+ 							<h3>￥3799.00</h3>
+-							<h6>Apple iphone 8plus 128GB 移动联通电信4G手机</h6>
++							<h6><a>Apple iphone 8plus 128GB 移动联通电信4G手机</a></h6>
+ 						</div>
+ 					</div>
+ 				</div>
+@@ -308,5 +308,18 @@
+ 		<script type="text/javascript" src="WEB-INF/js/jquery-3.5.1.js"></script>
+ 		<script src="WEB-INF/js/bootstrap.js" type="text/javascript"></script>
+ 		<script type="text/javascript" src="WEB-INF/js/vue.js"></script>
++		<script>
++			$("h6>a").click(function(){
++				var name = $(this).text();
++				var send = {
++					"name":name
++				}
++				console.log(send);
++				$.post("/toProDetail",send,function(data){
++					sessionStorage.setItem(data);
++					location.href("shangpin.html");
++				});
++			});
++		</script>
+ 	</body>
+ </html>
+Index: .idea/libraries/Maven__org_hibernate_hibernate_validator_4_3_2_Final.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_hibernate_hibernate_validator_4_3_2_Final.xml	(date 1601468513843)
++++ .idea/libraries/Maven__org_hibernate_hibernate_validator_4_3_2_Final.xml	(date 1601468513843)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.hibernate:hibernate-validator:4.3.2.Final">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/4.3.2.Final/hibernate-validator-4.3.2.Final.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/4.3.2.Final/hibernate-validator-4.3.2.Final-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/4.3.2.Final/hibernate-validator-4.3.2.Final-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml	(date 1601468513833)
++++ .idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml	(date 1601468513833)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: javax.annotation:javax.annotation-api:1.3.2">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file

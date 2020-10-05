@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+/* 顶部 */
+.header_container{
+	background-color: #dddddd;
+}
+.header_row{
+	height: 30px;
+	padding-left: 18%;
+}
+.header_left li,.header_right li{
+	line-height: 30px;
+	float: left;
+	margin-left: 10px;
+}
+.header_left li:first-child,.header_right li:first-child{
+	margin-left: 0;
+}
+.header_right a{
+	padding-right: 3px;
+	border-right: 1px solid;
+}
+.header_right li:last-child a{
+	border: none;
+}
+
+/* 主体 */
+/* 主体——页面标题 */
+.title_row{
+	padding-left: 19%;
+	margin-top: 10px;
+}
+.title_left{
+	height: 80px;
+}
+.title_left a{
+	line-height: 80px;
+	color: red;
+	font-weight: bolder;
+	font-size: 25px;
+	/* padding-left: 30px; */
+}
+.title_left a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+.title_left span{
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+/* 订单表头 */
+.thead_row{
+    padding-left: 19%;
+    margin-top: 10px;
+    padding-right: 17%;
+}
+.thead_item{
+    height: 40px;
+	text-align: center;
+	background-color: rgb(245, 245, 245);
+}
+.thead_item span{
+    line-height: 40px;
+}
+/* 订单内容 */
+/* 1、订单号 */
+.name_row{
+    padding-left: 19%;
+    margin-top: 10px;
+    padding-right: 17%;
+}
+.name_item{
+	border-top: 1px solid rgb(209, 232, 243);
+	border-bottom: 1px solid rgb(209, 232, 243);
+	height: 20px;
+	background-color: rgb(234, 248, 255);
+}
+.name_item:last-child{
+	border-right: 1px solid rgb(209, 232, 243);
+}
+.name_item:first-child{
+	border-left: 1px solid rgb(209, 232, 243);
+}
+.name_item span{
+	font-size: 12px;
+}
+
+/* 2、订单详情 */
+.order_row{
+    padding-left: 19%;
+    padding-right: 17%;
+}
+.order_item:first-child img{
+	width: 70px;
+}
+.order_item{
+	height: 80px;
+	border-right: 1px solid rgb(209, 232, 243);
+	border-top: 1px solid rgb(209, 232, 243);
+	border-bottom: 1px solid rgb(209, 232, 243);
+}
+.order_item:first-child{
+	border-left: 1px solid rgb(209, 232, 243);
+}
+.order_item span{
+    line-height: 80px;
+	font-size: 12px;
+	/* text-overflow: ellipsis; */
+}

@@ -1,0 +1,101 @@
+Index: web/login.html
+===================================================================
+--- web/login.html	(revision 28f974f51af98f2804058fbcab88767036cd22c4)
++++ web/login.html	(revision 28f974f51af98f2804058fbcab88767036cd22c4)
+@@ -1,78 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-	<head>
+-		<meta charset="utf-8">
+-		<title>登录</title>
+-		<link rel="stylesheet" type="text/css" href="WEB-INF/css/login.css"/>
+-	</head>
+-	<body>
+-	
+-		<header>
+-			<h2>MyPhone</h2>
+-		</header>
+-		
+-		<div id="main">
+-			<div id="table">
+-				<table>
+-					<tr><th>新用户注册</th></tr>
+-					<tr>
+-						<td>
+-							<input placeholder="请设置登录账号" type="text" name="loginName" id="loginName"/>
+-							<br>
+-							<span>登录账号为8-12位</span>
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<input placeholder="请设置密码" type="text" name="password" id="password"/>
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<input placeholder="请再次输入密码" type="text" name="againPwd" id="againPwd"/>
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<input placeholder="请设置手机号" type="text" name="phone" id="phone"/>
+-						</td>
+-					</tr>
+-					<tr class="error">
+-						<td>
+-							
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<button type="button">立即注册</button>
+-						</td>
+-					</tr>
+-					<tr>
+-						<td>
+-							<a href="#">已有账号，去登录</a>
+-						</td>
+-					</tr>
+-				</table>
+-			</div>
+-		</div>
+-		
+-		<footer>
+-			<span id="name">@软件10班 SK小组版权所有</span>
+-		</footer>
+-	
+-		<script type="text/javascript" src="WEB-INF/js/jquery-3.5.1.js"></script>
+-		<script src="WEB-INF/js/bootstrap.js" type="text/javascript"></script>
+-		<script type="text/javascript" src="WEB-INF/js/vue.js"></script>
+-		<script type="text/javascript">
+-			// $(function(){
+-			// 	vue = new Vue({
+-			// 		el:"#hello",
+-			// 		data:{
+-			// 			"hello":"helloVue"
+-			// 		}
+-			// 	});
+-			// });
+-			
+-		</script>
+-	</body>
+-</html>
+Index: src/main/java/com/qst/controller/UserController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.qst.controller;\r\n\r\nimport com.alibaba.fastjson.JSON;\r\nimport com.qst.enums.UserStatus;\r\nimport com.qst.pojo.User;\r\nimport com.qst.service.UserService;\r\nimport com.qst.util.Constants;\r\nimport com.qst.util.MD5;\r\nimport org.apache.ibatis.annotations.Param;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.stereotype.Controller;\r\nimport org.springframework.web.bind.annotation.RequestMapping;\r\nimport org.springframework.web.bind.annotation.RequestMethod;\r\nimport org.springframework.web.bind.annotation.RequestParam;\r\nimport org.springframework.web.bind.annotation.ResponseBody;\r\n\r\nimport javax.servlet.http.HttpSession;\r\n\r\n/**\r\n * @Author: XiPeng\r\n * @Description:\r\n * @Date: Create in 17:58 2020/9/29\r\n * @Modified by:\r\n */\r\n@Controller\r\npublic class UserController {\r\n    @Autowired\r\n    UserService userService;\r\n\r\n    @RequestMapping(value = \"/register\",method = RequestMethod.POST)\r\n    @ResponseBody\r\n    public String register(HttpSession session,\r\n                           @RequestParam(value = \"loginName\",required = false) String userName,\r\n                           @RequestParam(value = \"password\",required = false) String password,\r\n                           @RequestParam(value = \"userName\",required = false) String roleName,\r\n                           @RequestParam(value = \"phone\",required = false) String phone){\r\n        User user = new User();\r\n        user.setUsername(userName);\r\n        user.setPassword(password);\r\n        user.setRealname(roleName);\r\n        user.setPhone(phone);\r\n        int register = userService.register(user);\r\n        if (register==1){\r\n            session.setAttribute(Constants.REGISTER_STATIC_SESSION,JSON.toJSONString(UserStatus.REGISTER_SUCCESS));\r\n        }\r\n        else {\r\n            session.setAttribute(Constants.REGISTER_STATIC_SESSION,JSON.toJSONString(UserStatus.REGISTER_FAIL));\r\n        }\r\n//        跳转到登录页\r\n        return \"denglu\";\r\n    }\r\n\r\n    @RequestMapping(value = \"/denglu\",method = RequestMethod.POST)\r\n    public String denglu(HttpSession session,\r\n            @RequestParam(value = \"loginName\") String userName,\r\n                         @RequestParam(value = \"password\") String password){\r\n        User user = new User();\r\n        user.setUsername(userName);\r\n        user.setPassword(password);\r\n        User login = userService.login(user);\r\n        login.setPassword(null);\r\n//        判断角色:前端处理\r\n        session.setAttribute(Constants.USER_SESSION,JSON.toJSON(login));\r\n        return \"home\";\r\n    }\r\n\r\n    @RequestMapping(\"/logout\")\r\n    public String logout(HttpSession session){\r\n        session.removeAttribute(Constants.USER_SESSION);\r\n        return \"denglu\";\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/com/qst/controller/UserController.java	(revision 28f974f51af98f2804058fbcab88767036cd22c4)
++++ src/main/java/com/qst/controller/UserController.java	(date 1601720723823)
+@@ -27,7 +27,7 @@
+     @Autowired
+     UserService userService;
+ 
+-    @RequestMapping(value = "/register",method = RequestMethod.POST)
++    @RequestMapping(value = "/register")
+     @ResponseBody
+     public String register(HttpSession session,
+                            @RequestParam(value = "loginName",required = false) String userName,

@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+/* 头部 */
+.header_container{
+	background-color: #dddddd;
+}
+.header_row{
+	height: 30px;
+	padding-left: 18%;
+}
+.header_left li,.header_right li{
+	line-height: 30px;
+	float: left;
+	margin-left: 10px;
+}
+.header_left li:first-child,.header_right li:first-child{
+	margin-left: 0;
+}
+.header_right a{
+	padding-right: 3px;
+	border-right: 1px solid;
+}
+.header_right li:last-child a{
+	border: none;
+}
+
+/* 主体 */
+/* 主体——搜索 */
+.mysearch_row{
+	padding-left: 20%;
+	margin-top: 10px;
+}
+.mysearch_left{
+	height: 80px;
+}
+.mysearch_left a{
+	line-height: 80px;
+	color: red;
+	font-weight: bolder;
+	font-size: 25px;
+}
+.mysearch_left a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+.mysearch_right{
+	height: 80px;
+}
+.mysearch_right .my_input{
+	margin-top: 22px;
+}
+.my_input input,.my_input button{
+	border-color: red;
+}
+.my_input button{
+	background-color: red;
+	color: white;
+}
+.my_input button:hover{
+	background-color: red;
+}
+.my_input button:active{
+	background-color: red;
+}
+
+
+/* 提示信息 */
+.success_container{
+    background-color: rgb(243, 242, 243);
+}
+.success_row{
+    padding-left: 20%;
+    height: 120px;
+}
+.success_left,.success_right{
+    height: 120px;
+}
+.success_left p{
+	margin-top: 20px;
+	font-size: 20px;
+	color: rgb(118, 180, 81);
+}
+.success_right{
+	text-align: right;
+}
+.success_right .button{
+	position: relative;
+	top: 60%;
+}
+.success_right .btn1{
+	width: 90px;
+	height: 30px;
+	background-color: rgb(243, 242, 243);
+	border-radius: 0;
+}
+.success_right .btn1:hover{
+	background-color: rgb(243, 242, 243);
+}
+.success_right .btn2{
+	width: 130px;
+	height: 30px;
+	background-color: red;
+	border-radius: 0;
+}
+.success_right .btn2:hover{
+	background-color: red;
+}

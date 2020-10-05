@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="phone2:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e8bc1aae-bb71-48a2-a4b9-7d46c278d6e3" name="Default Changelist" comment="整合交易界面到shopping文件夹">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/phone2_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_6_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_2_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_2_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_2_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_2_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_2_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_2_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_2_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_2_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_2_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/phone2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_2_16_13_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_2_16_13__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_2_9_45_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_2_9_45__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_5_11_03_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_5_11_03__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_5_8_21_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_5_8_21__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_29_18_09_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_29_18_09__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_29_18_41_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_29_18_41__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_29_19_54_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_29_19_54__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_29_20_28_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_29_20_28__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_30_20_21_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_30_20_21__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_30_9_36_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_30_9_36__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/SpringContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/SpringMVC-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/datasource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/mapper/GoodsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/mapper/ShopCartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/css/denglu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/30S/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/30S/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/30S/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/30S/30S.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/30S/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/30S/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/30S/Snipaste_2020-09-29_16-40-57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/Mate 30/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/Mate 30/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/Mate 30/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/Mate 30/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/Mate 30/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/Mate 30/Mate 30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/Mate 30/awfe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/nova 5/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/nova 5/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/nova 5/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/nova 5/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/nova 5/nova 5 Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/nova 5/r55c135.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/p40 pro/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/p40 pro/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/p40 pro/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/p40 pro/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/p40 pro/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/p40 pro/P40 Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/HuaWei/p40 pro/e4815.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 10X/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 10X/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 10X/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 10X/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 10X/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 10X/Redmi 10X.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 10X/Redmi10X.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 8A/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 8A/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 8A/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 8A/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 8A/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 8A/Redmi 8A.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi 8A/redmi8a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi K30/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi K30/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi K30/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi K30/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi K30/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi K30/Rednu k30MAX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/Redmi K30/casce446.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/mi 10MAX/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/mi 10MAX/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/mi 10MAX/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/mi 10MAX/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/mi 10MAX/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/mi 10MAX/MI 10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/MI/mi 10MAX/MI10MAX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/11ProMax/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/11ProMax/11Pro Max.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/11ProMax/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/11ProMax/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/11ProMax/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/11ProMax/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/11ProMax/Snipaste_2020-09-29_16-50-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/8 plus/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/8 plus/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/8 plus/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/8 plus/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/8 plus/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/8 plus/8 plus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/8 plus/Snipaste_2020-09-29_17-00-56.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/SE/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/SE/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/SE/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/SE/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/SE/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/SE/Snipaste_2020-09-29_16-56-15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/XS Max/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/XS Max/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/apple/XS Max/Snipaste_2020-09-29_16-58-49.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/carousel_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/carousel_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/carousel_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/carousel_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/carousel_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IPOO Neo3/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IPOO Neo3/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IPOO Neo3/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IPOO Neo3/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IPOO Neo3/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IPOO Neo3/IQOO_Neo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IPOO Neo3/d4v68s1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IQOO Z1/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IQOO Z1/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IQOO Z1/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IQOO Z1/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IQOO Z1/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IQOO Z1/IQOO_Z1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/IQOO Z1/c3sd51e53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/X50/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/X50/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/X50/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/X50/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/X50/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/X50/X50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/X50/ksahfun15486.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/s7/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/s7/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/s7/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/s7/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/s7/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/s7/S7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/img/vivo/s7/ae4c61e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/js/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/denglu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/PhoneMallSystem_war_exploded/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/SpringContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/SpringMVC-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/datasource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/mapper/GoodsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/mapper/ShopCartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/denglu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/goCar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/order.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/proCar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/css/subOrder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/30S/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/30S/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/30S/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/30S/30S.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/30S/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/30S/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/Mate_30/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/Mate_30/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/Mate_30/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/Mate_30/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/Mate_30/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/Mate_30/Mate30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/nova 5/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/nova 5/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/nova 5/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/nova 5/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/nova 5/nova5_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/p40_pro/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/p40_pro/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/p40_pro/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/p40_pro/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/p40_pro/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/HuaWei/p40_pro/P40_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_10X/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_10X/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_10X/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_10X/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_10X/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_10X/Redmi_10X.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_8A/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_8A/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_8A/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_8A/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_8A/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_8A/Redmi_8A.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_K30/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_K30/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_K30/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_K30/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_K30/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/Redmi_K30/Rednu_k30MAX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/mi_10MAX/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/mi_10MAX/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/mi_10MAX/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/mi_10MAX/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/mi_10MAX/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/MI/mi_10MAX/MI10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/11ProMax/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/11ProMax/11Pro_Max.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/11ProMax/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/11ProMax/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/11ProMax/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/11ProMax/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/8plus/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/8plus/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/8plus/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/8plus/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/8plus/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/8plus/8_plus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/SE/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/SE/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/SE/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/SE/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/SE/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/SE/SE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/XS_Max/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/XS_Max/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/apple/XS_Max/XS_Max.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/carousel_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/carousel_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/carousel_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/carousel_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/carousel_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IPOO_Neo3/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IPOO_Neo3/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IPOO_Neo3/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IPOO_Neo3/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IPOO_Neo3/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IPOO_Neo3/IQOO_Neo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IQOO_Z1/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IQOO_Z1/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IQOO_Z1/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IQOO_Z1/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IQOO_Z1/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/IQOO_Z1/IQOO_Z1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/X50/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/X50/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/X50/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/X50/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/X50/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/X50/X50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/s7/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/s7/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/s7/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/s7/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/s7/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/img/vivo/s7/S7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/js/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/denglu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/goCar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/proCar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/resetPwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_Web_exploded/subOrder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/SpringContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/SpringMVC-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/datasource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/mapper/GoodsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/mapper/ShopCartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/denglu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/goCar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/order.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/proCar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/css/subOrder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/30S/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/30S/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/30S/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/30S/30S.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/30S/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/30S/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/Mate_30/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/Mate_30/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/Mate_30/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/Mate_30/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/Mate_30/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/Mate_30/Mate30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/nova 5/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/nova 5/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/nova 5/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/nova 5/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/nova 5/nova5_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/p40_pro/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/p40_pro/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/p40_pro/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/p40_pro/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/p40_pro/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/HuaWei/p40_pro/P40_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_10X/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_10X/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_10X/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_10X/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_10X/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_10X/Redmi_10X.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_8A/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_8A/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_8A/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_8A/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_8A/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_8A/Redmi_8A.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_K30/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_K30/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_K30/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_K30/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_K30/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/Redmi_K30/Rednu_k30MAX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/mi_10MAX/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/mi_10MAX/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/mi_10MAX/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/mi_10MAX/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/mi_10MAX/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/MI/mi_10MAX/MI10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/11ProMax/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/11ProMax/11Pro_Max.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/11ProMax/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/11ProMax/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/11ProMax/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/11ProMax/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/8plus/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/8plus/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/8plus/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/8plus/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/8plus/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/8plus/8_plus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/SE/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/SE/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/SE/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/SE/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/SE/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/SE/SE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/XS_Max/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/XS_Max/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/apple/XS_Max/XS_Max.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/carousel_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/carousel_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/carousel_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/carousel_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/carousel_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IPOO_Neo3/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IPOO_Neo3/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IPOO_Neo3/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IPOO_Neo3/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IPOO_Neo3/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IPOO_Neo3/IQOO_Neo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IQOO_Z1/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IQOO_Z1/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IQOO_Z1/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IQOO_Z1/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IQOO_Z1/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/IQOO_Z1/IQOO_Z1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/X50/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/X50/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/X50/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/X50/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/X50/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/X50/X50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/s7/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/s7/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/s7/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/s7/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/s7/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/img/vivo/s7/S7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/js/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/shopping/denglu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/shopping/goCar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/shopping/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/shopping/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/shopping/proCar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/shopping/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/shopping/resetPwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/phone2_war_exploded/shopping/subOrder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/SpringContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/SpringMVC-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/datasource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/ShopCartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1iARHfUfIpaW8o8gZ496DPKOsEm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/shopping/denglu.html" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15039062" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA\phone2\web" />
+      <recent name="D:\IDEA\phone2\web\shopping" />
+      <recent name="D:\IDEA\phone2\web\SuKun_Page" />
+      <recent name="D:\IDEA\phone2\web\BaiHui_Page" />
+      <recent name="D:\IDEA\phone2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA\phone2" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.31" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="phone2:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_phone2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59481" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="phone2:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8bc1aae-bb71-48a2-a4b9-7d46c278d6e3" name="Default Changelist" comment="" />
+      <created>1601348324149</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601348324149</updated>
+      <workItem from="1601348325854" duration="3900000" />
+      <workItem from="1601371005199" duration="9804000" />
+      <workItem from="1601427655783" duration="4511000" />
+      <workItem from="1601468362044" duration="327000" />
+      <workItem from="1601603082661" duration="321000" />
+      <workItem from="1601603452882" duration="5076000" />
+      <workItem from="1601706632510" duration="657000" />
+      <workItem from="1601714379725" duration="1091000" />
+      <workItem from="1601715833383" duration="937000" />
+      <workItem from="1601717938057" duration="4913000" />
+      <workItem from="1601855227016" duration="11626000" />
+      <workItem from="1601866921984" duration="635000" />
+    </task>
+    <task id="LOCAL-00001" summary="提交项目框架">
+      <created>1601348597762</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601348597762</updated>
+    </task>
+    <task id="LOCAL-00002" summary="提交.sql">
+      <created>1601349677370</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601349677370</updated>
+    </task>
+    <task id="LOCAL-00003" summary="提交.sql">
+      <created>1601350054501</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601350054501</updated>
+    </task>
+    <task id="LOCAL-00004" summary="提交README.md">
+      <created>1601350290367</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601350290367</updated>
+    </task>
+    <task id="LOCAL-00005" summary="提交README.md">
+      <created>1601351301002</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601351301002</updated>
+    </task>
+    <task id="LOCAL-00006" summary="提交注册界面和主页面">
+      <created>1601351345794</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601351345794</updated>
+    </task>
+    <task id="LOCAL-00007" summary="提交注册界面register.html">
+      <created>1601374131477</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601374131477</updated>
+    </task>
+    <task id="LOCAL-00008" summary="第二次提交注册界面register.html">
+      <created>1601376072284</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601376072284</updated>
+    </task>
+    <task id="LOCAL-00009" summary="苏昆提交register.html，register.css和bootstrap.css">
+      <created>1601382505942</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601382505942</updated>
+    </task>
+    <task id="LOCAL-00010" summary="苏昆提交register.html">
+      <created>1601383987548</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601383987548</updated>
+    </task>
+    <task id="LOCAL-00011" summary="苏昆提交img图片素材">
+      <created>1601427819122</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601427819122</updated>
+    </task>
+    <task id="LOCAL-00012" summary="苏昆提交img图片素材、home.html和home.css">
+      <created>1601468481628</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601468481629</updated>
+    </task>
+    <task id="LOCAL-00013" summary="提交html页面">
+      <created>1601619273905</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601619273905</updated>
+    </task>
+    <task id="LOCAL-00014" summary="提交bootstrap">
+      <created>1601620681250</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1601620681250</updated>
+    </task>
+    <task id="LOCAL-00015" summary="提交订单详情页">
+      <created>1601626365358</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1601626365358</updated>
+    </task>
+    <task id="LOCAL-00016" summary="修改路径，将静态资源移入web文件">
+      <created>1601856631054</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1601856631054</updated>
+    </task>
+    <task id="LOCAL-00017" summary="..">
+      <created>1601857270834</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1601857270834</updated>
+    </task>
+    <task id="LOCAL-00018" summary="整合交易界面到shopping文件夹">
+      <created>1601858989010</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1601858989010</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交项目框架" />
+    <MESSAGE value="提交.sql" />
+    <MESSAGE value="提交README.md" />
+    <MESSAGE value="提交注册界面和主页面" />
+    <MESSAGE value="提交注册界面register.html" />
+    <MESSAGE value="第二次提交注册界面register.html" />
+    <MESSAGE value="苏昆提交register.html，register.css和bootstrap.css" />
+    <MESSAGE value="苏昆提交register.html" />
+    <MESSAGE value="苏昆提交img图片素材" />
+    <MESSAGE value="苏昆提交img图片素材、home.html和home.css" />
+    <MESSAGE value="提交html页面" />
+    <MESSAGE value="提交bootstrap" />
+    <MESSAGE value="提交订单详情页" />
+    <MESSAGE value="修改路径，将静态资源移入web文件" />
+    <MESSAGE value=".." />
+    <MESSAGE value="整合交易界面到shopping文件夹" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合交易界面到shopping文件夹" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="651" y="274" key="#Notifications" timestamp="1601856826062">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="651" y="274" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1601856826062" />
+    <state x="113" y="0" key="#Project_Structure" timestamp="1601716573684">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="113" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1601716573684" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601865512563">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601865512563" />
+    <state x="555" y="336" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1601721812803">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="336" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1536.824@0.0.1536.824" timestamp="1601721812803" />
+    <state x="557" y="318" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1601721824334">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="557" y="318" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1536.824@0.0.1536.824" timestamp="1601721824334" />
+    <state x="411" y="153" key="FileChooserDialogImpl" timestamp="1601858780761">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="411" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601858780761" />
+    <state width="1367" height="666" key="GridCell.Tab.0.bottom" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.0.center" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.0.left" timestamp="1601867016236">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601867016236" />
+    <state width="1367" height="666" key="GridCell.Tab.0.right" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.1.bottom" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.1.center" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.1.left" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.1.right" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.2.bottom" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.2.center" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.2.left" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="666" key="GridCell.Tab.2.right" timestamp="1601867016237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="666" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1601867016237" />
+    <state width="1367" height="210" key="GridCell.Tab.3.bottom" timestamp="1601864985043">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="210" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601864985043" />
+    <state width="1367" height="210" key="GridCell.Tab.3.center" timestamp="1601864985043">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="210" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1601864985043" />
+    <state width="1367" height="210" key="GridCell.Tab.3.left" timestamp="1601864985043">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="210" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1601864985043" />
+    <state width="1367" height="210" key="GridCell.Tab.3.right" timestamp="1601864985043">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1367" height="210" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1601864985043" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1601715466666">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1601715466666" />
+    <state x="408" y="115" width="722" height="593" key="NewModule_or_Project.wizard" timestamp="1601626058556">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="408" y="115" width="722" height="593" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1601626058556" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1601721830236">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601721830236" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601867367857">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601867367857" />
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601867128476">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601867128476" />
+    <state x="302" y="199" key="git4idea.merge.GitPullDialog" timestamp="1601867305648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="302" y="199" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1601867305648" />
+    <state x="449" y="95" key="spring file set editor" timestamp="1601626304385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1601626304385" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qst/controller/UserController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

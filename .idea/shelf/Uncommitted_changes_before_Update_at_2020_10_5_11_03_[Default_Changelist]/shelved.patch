@@ -1,0 +1,160 @@
+Index: web/WEB-INF/web.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<web-app xmlns=\"http://xmlns.jcp.org/xml/ns/javaee\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd\"\r\n         version=\"4.0\">\r\n<!--    <welcome-file-list>-->\r\n<!--        <welcome-file>/WEB-INF/jsp/login.jsp</welcome-file>-->\r\n<!--    </welcome-file-list>-->\r\n    <servlet>\r\n        <servlet-name>springmvc</servlet-name>\r\n        <!--        前端控制器-->\r\n        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>\r\n        <init-param>\r\n            <param-name>contextConfigLocation</param-name>\r\n            <param-value>classpath*:SpringMVC-servlet.xml</param-value>\r\n        </init-param>\r\n        <!--        web容器启动时加载配置文件-->\r\n        <load-on-startup>1</load-on-startup>\r\n    </servlet>\r\n    <servlet-mapping>\r\n        <!--        请求过滤-->\r\n        <servlet-name>springmvc</servlet-name>\r\n        <url-pattern>/</url-pattern>\r\n    </servlet-mapping>\r\n<!--    拦截静态资源-->\r\n    <servlet-mapping>\r\n        <servlet-name>default</servlet-name>\r\n        <url-pattern>*.css</url-pattern>\r\n    </servlet-mapping>\r\n    <servlet-mapping>\r\n        <servlet-name>default</servlet-name>\r\n        <url-pattern>*.js</url-pattern>\r\n    </servlet-mapping>\r\n    <servlet-mapping>\r\n        <servlet-name>default</servlet-name>\r\n        <url-pattern>*.png</url-pattern>\r\n    </servlet-mapping>\r\n\r\n    <servlet-mapping>\r\n        <servlet-name>default</servlet-name>\r\n        <url-pattern>*.jpg</url-pattern>\r\n    </servlet-mapping>\r\n\r\n    <servlet-mapping>\r\n        <servlet-name>default</servlet-name>\r\n        <url-pattern>*.gif</url-pattern>\r\n    </servlet-mapping>\r\n    <servlet-mapping>\r\n        <servlet-name>default</servlet-name>\r\n        <url-pattern>*.html</url-pattern>\r\n    </servlet-mapping>\r\n\r\n\r\n    <!--    web启动自动配置spring-->\r\n    <context-param>\r\n        <param-name>contextConfigLocation</param-name>\r\n        <param-value>classpath*:SpringContext.xml</param-value>\r\n\r\n    </context-param>\r\n    <listener>\r\n        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>\r\n    </listener>\r\n    <!--字符过滤器-->\r\n    <filter>\r\n        <filter-name>encoding</filter-name>\r\n        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>\r\n        <init-param>\r\n            <param-name>encoding</param-name>\r\n            <param-value>utf-8</param-value>\r\n        </init-param>\r\n        <init-param>\r\n            <param-name>forceEncoding</param-name>\r\n            <param-value>true</param-value>\r\n        </init-param>\r\n    </filter>\r\n    <filter-mapping>\r\n        <filter-name>encoding</filter-name>\r\n        <url-pattern>/*</url-pattern>\r\n    </filter-mapping>\r\n\r\n</web-app>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- web/WEB-INF/web.xml	(revision 54bf8699f74ad01208febb3c10cb6af69777ea2b)
++++ web/WEB-INF/web.xml	(date 1601859815058)
+@@ -3,9 +3,9 @@
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+          version="4.0">
+-<!--    <welcome-file-list>-->
+-<!--        <welcome-file>/WEB-INF/jsp/login.jsp</welcome-file>-->
+-<!--    </welcome-file-list>-->
++    <welcome-file-list>
++        <welcome-file>/shopping/denglu.html</welcome-file>
++    </welcome-file-list>
+     <servlet>
+         <servlet-name>springmvc</servlet-name>
+         <!--        前端控制器-->
+Index: web/shopping/register.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\">\r\n\t\t<title>登录</title>\r\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/register.css\"/>\r\n\t</head>\r\n\t<body>\r\n\t\r\n\t\t<header>\r\n\t\t\t<h2>MyPhone</h2>\r\n\t\t</header>\r\n\t\t\r\n\t\t<div id=\"main\">\r\n\t\t\t<div id=\"table\">\r\n\t\t\t\t\t<table>\r\n\t\t\t\t\t\t<tr><th>新用户注册</th></tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t<input placeholder=\"请设置8-10位登录账号\" type=\"text\" name=\"loginName\" id=\"loginName\"/>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t<input placeholder=\"请设置6位密码\" type=\"text\" name=\"password\" id=\"password\"/>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t<input placeholder=\"请再次输入密码\" type=\"text\" name=\"againPwd\" id=\"againPwd\"/>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t<input placeholder=\"请输入真实姓名\" type=\"text\" name=\"userName\" id=\"userName\"/>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t<input placeholder=\"请设置手机号\" type=\"text\" name=\"phone\" id=\"phone\"/>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr class=\"error\">\r\n\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t{{error}}\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t<button id=\"register\" type=\"button\">立即注册</button>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t<a href=\"denglu.html\">已有账号，去登录</a>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t</table>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t\r\n\t\t<footer>\r\n\t\t\t<span id=\"name\">@软件10班 SK小组版权所有</span>\r\n\t\t</footer>\r\n\t\r\n\t\t<script type=\"text/javascript\" src=\"../js/jquery-3.5.1.js\"></script>\r\n\t\t<script type=\"text/javascript\" src=\"../js/bootstrap.js\"></script>\r\n\t\t<script type=\"text/javascript\" src=\"../js/vue.js\"></script>\r\n\t\t<script type=\"text/javascript\">\r\n\t\t\t$(function(){\r\n\t\t\t\tvue = new Vue({\r\n\t\t\t\t\tel:\".error\",\r\n\t\t\t\t\tdata:{\r\n\t\t\t\t\t\terror:\"\"\r\n\t\t\t\t\t}\r\n\t\t\t\t});\r\n\t\t\t});\r\n\t\t\t$(\"#register\").click(function(){\r\n\t\t\t\tvar loginName = $(\"#loginName\").val();\r\n\t\t\t\tvar password = $(\"#password\").val();\r\n\t\t\t\tvar againPwd = $(\"#againPwd\").val();\r\n\t\t\t\tvar userName = $(\"#userName\").val();\r\n\t\t\t\tvar phone = $(\"#phone\").val();\r\n\t\t\t\tif(loginName.length>=8 && loginName.length<=10 && password.length==6 && againPwd==password && userName!=\"\" && phone.length==11){\r\n\t\t\t\t\tvar d = {\r\n\t\t\t\t\t\t\"loginName\":loginName,\r\n\t\t\t\t\t\t\"password\":password,\r\n\t\t\t\t\t\t\"userName\":userName,\r\n\t\t\t\t\t\t\"phone\":phone\r\n\t\t\t\t\t}\r\n\t\t\t\t\t$.post(\"/register\",d,function(data){\r\n\t\t\t\t\t\tif(data){\r\n\t\t\t\t\t\t\tlocation.href=\"denglu.html\";\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\telse{\r\n\t\t\t\t\t\t\tvue.error=\"注册失败\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t\telse{\r\n\t\t\t\t\tvue.error=\"信息格式错误\"\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t</script>\r\n\t</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- web/shopping/register.html	(revision 54bf8699f74ad01208febb3c10cb6af69777ea2b)
++++ web/shopping/register.html	(date 1601866748888)
+@@ -2,8 +2,11 @@
+ <html>
+ 	<head>
+ 		<meta charset="utf-8">
+-		<title>登录</title>
++		<title>注册</title>
+ 		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
++		<script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
++		<script type="text/javascript" src="../js/bootstrap.js"></script>
++		<script type="text/javascript" src="../js/vue.js"></script>
+ 	</head>
+ 	<body>
+ 	
+@@ -52,7 +55,7 @@
+ 						</tr>
+ 						<tr>
+ 							<td>
+-								<a href="denglu.html">已有账号，去登录</a>
++								<a href="shopping/denglu.html">已有账号，去登录</a>
+ 							</td>
+ 						</tr>
+ 					</table>
+@@ -62,10 +65,7 @@
+ 		<footer>
+ 			<span id="name">@软件10班 SK小组版权所有</span>
+ 		</footer>
+-	
+-		<script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+-		<script type="text/javascript" src="../js/bootstrap.js"></script>
+-		<script type="text/javascript" src="../js/vue.js"></script>
++
+ 		<script type="text/javascript">
+ 			$(function(){
+ 				vue = new Vue({
+@@ -87,15 +87,32 @@
+ 						"password":password,
+ 						"userName":userName,
+ 						"phone":phone
+-					}
+-					$.post("/register",d,function(data){
+-						if(data){
+-							location.href="denglu.html";
+-						}
+-						else{
+-							vue.error="注册失败"
++					};
++					$.ajax({
++						type:"post",
++						url:"/test",
++						data:d,
++						dataType:"json",
++						success:function(result){
++							if(result.res){
++								location.href="denglu.html";
++							}
++							else{
++								vue.error="注册失败";
++							}
++						},
++						error:function () {
++							vue.error="注册失败";
+ 						}
+-					});
++					})
++					// $.post("register",d,function(data){
++					// 	if(data){
++					// 		location.href="denglu.html";
++					// 	}
++					// 	else{
++					// 		vue.error="注册失败"
++					// 	}
++					// });
+ 				}
+ 				else{
+ 					vue.error="信息格式错误"
+Index: src/main/java/com/qst/controller/UserController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.qst.controller;\r\n\r\nimport com.alibaba.fastjson.JSON;\r\nimport com.qst.enums.UserStatus;\r\nimport com.qst.pojo.User;\r\nimport com.qst.service.UserService;\r\nimport com.qst.util.Constants;\r\nimport com.qst.util.MD5;\r\nimport org.apache.ibatis.annotations.Param;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.stereotype.Controller;\r\nimport org.springframework.web.bind.annotation.RequestMapping;\r\nimport org.springframework.web.bind.annotation.RequestMethod;\r\nimport org.springframework.web.bind.annotation.RequestParam;\r\nimport org.springframework.web.bind.annotation.ResponseBody;\r\n\r\nimport javax.servlet.http.HttpSession;\r\n\r\n/**\r\n * @Author: XiPeng\r\n * @Description:\r\n * @Date: Create in 17:58 2020/9/29\r\n * @Modified by:\r\n */\r\n@Controller\r\npublic class UserController {\r\n    @Autowired\r\n    UserService userService;\r\n\r\n    @RequestMapping(value = \"/register\",method = RequestMethod.POST)\r\n    @ResponseBody\r\n    public String register(HttpSession session,\r\n                           @RequestParam(value = \"loginName\",required = false) String userName,\r\n                           @RequestParam(value = \"password\",required = false) String password,\r\n                           @RequestParam(value = \"userName\",required = false) String roleName,\r\n                           @RequestParam(value = \"phone\",required = false) String phone){\r\n        User user = new User();\r\n        user.setUsername(userName);\r\n        user.setPassword(password);\r\n        user.setRealname(roleName);\r\n        user.setPhone(phone);\r\n        int register = userService.register(user);\r\n        if (register==1){\r\n            session.setAttribute(Constants.REGISTER_STATIC_SESSION,JSON.toJSONString(UserStatus.REGISTER_SUCCESS));\r\n        }\r\n        else {\r\n            session.setAttribute(Constants.REGISTER_STATIC_SESSION,JSON.toJSONString(UserStatus.REGISTER_FAIL));\r\n        }\r\n//        跳转到登录页\r\n        return \"denglu\";\r\n    }\r\n\r\n    @RequestMapping(value = \"/denglu\",method = RequestMethod.POST)\r\n    public String denglu(HttpSession session,\r\n            @RequestParam(value = \"loginName\") String userName,\r\n                         @RequestParam(value = \"password\") String password){\r\n        User user = new User();\r\n        user.setUsername(userName);\r\n        user.setPassword(password);\r\n        User login = userService.login(user);\r\n        login.setPassword(null);\r\n//        判断角色:前端处理\r\n        session.setAttribute(Constants.USER_SESSION,JSON.toJSON(login));\r\n        return \"home\";\r\n    }\r\n\r\n    @RequestMapping(\"/logout\")\r\n    public String logout(HttpSession session){\r\n        session.removeAttribute(Constants.USER_SESSION);\r\n        return \"denglu\";\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/com/qst/controller/UserController.java	(revision 54bf8699f74ad01208febb3c10cb6af69777ea2b)
++++ src/main/java/com/qst/controller/UserController.java	(date 1601862757103)
+@@ -47,7 +47,7 @@
+             session.setAttribute(Constants.REGISTER_STATIC_SESSION,JSON.toJSONString(UserStatus.REGISTER_FAIL));
+         }
+ //        跳转到登录页
+-        return "denglu";
++        return "1";
+     }
+ 
+     @RequestMapping(value = "/denglu",method = RequestMethod.POST)
+Index: web/shopping/denglu.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <link rel=\"stylesheet\" href=\"../css/reset.css\">\r\n    <link rel=\"stylesheet\" href=\"../css/denglu.css\">\r\n</head>\r\n<body>\r\n    <header class=\"header\">\r\n        <h2>Myphone</h2>\r\n    </header>\r\n\r\n    <div class=\"main\">\r\n        <div class=\"denglu\">\r\n            <h1>用户登录</h1>\r\n            <p>\r\n                账号：\r\n                <input name=\"dengluid\" type=\"text\" placeholder=\"请输入您的账号\" id=\"loginName\">\r\n            </p>\r\n            <p class=\"pwd\">\r\n                密码：\r\n                <input name=\"dengluid\" type=\"password\" placeholder=\"请输入您的密码\" id=\"password\">\r\n            </p>\r\n            <p class=\"error\">\r\n                {{error}}\r\n            </p>\r\n            <p>\r\n                <button type=\"submit\" id=\"login\">登录</button>\r\n                <button type=\"button\" id=\"zhuce\">注册</button>\r\n            </p>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"last\">\r\n        @软件10班 SK小组版权所有\r\n    </div>\r\n\r\n    <script type=\"text/javascript\" src=\"../js/jquery-3.5.1.js\"></script>\r\n\t<script type=\"text/javascript\" src=\"../js/vue.js\"></script>\r\n    <script type=\"text/javascript\">\r\n            $(function(){\r\n\t\t\t\tvue = new Vue({\r\n\t\t\t\t\tel:\".error\",\r\n\t\t\t\t\tdata:{\r\n\t\t\t\t\t\terror:\"\"\r\n\t\t\t\t\t}\r\n\t\t\t\t});\r\n                $(\"#login\").click(function(){\r\n\t\t\t\t\tvar loginName = $(\"#loginName\").val();\r\n\t\t\t\t\tvar password = $(\"#password\").val();\r\n\t\t\t\t\tvar d = {\r\n\t\t\t\t\t\t\"loginName\":loginName,\r\n\t\t\t\t\t\t\"password\":password,\r\n\t\t\t\t\t}\r\n\t\t\t\t\t$.post(\"/denglu\",d,function(data){\r\n\t\t\t\t\t\tif(data){\r\n\t\t\t\t\t\t\tlocation.href=\"home.html\";\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\telse{\r\n\t\t\t\t\t\t\tvue.error=\"登录失败，请注册\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t});\r\n\t\t\t\t});\r\n\t\t\t\t$(\"#zhuce\").click(function(){\r\n\t\t\t\t\tlocation.href=\"register.html\";\r\n\t\t\t\t});\r\n\t\t\t});\r\n    </script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- web/shopping/denglu.html	(revision 54bf8699f74ad01208febb3c10cb6af69777ea2b)
++++ web/shopping/denglu.html	(date 1601860262813)
+@@ -64,7 +64,7 @@
+ 					});
+ 				});
+ 				$("#zhuce").click(function(){
+-					location.href="register.html";
++					location.href="shopping/register.html";
+ 				});
+ 			});
+     </script>
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Compiled class file\r\n*.class\r\n\r\n# Log file\r\n*.log\r\n\r\n# BlueJ files\r\n*.ctxt\r\n\r\n# Mobile Tools for Java (J2ME)\r\n.mtj.tmp/\r\n\r\n# Package Files #\r\n*.jar\r\n*.war\r\n*.nar\r\n*.ear\r\n*.zip\r\n*.tar.gz\r\n*.rar\r\n\r\n# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml\r\nhs_err_pid*\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .gitignore	(revision 54bf8699f74ad01208febb3c10cb6af69777ea2b)
++++ .gitignore	(date 1601859273075)
+@@ -21,3 +21,8 @@
+ 
+ # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+ hs_err_pid*
++/web/shopping/
++/web/bootstrap-3.3.7-dist/
++/web/css/
++/web/img/
++/web/js/

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="WEB-INF/css/reset.css">
+    <link rel="stylesheet" href="WEB-INF/css/denglu.css">
+</head>
+<body>
+    <header class="header">
+        <h2>Myphone</h2>
+    </header>
+
+    <div class="main">
+        <div class="denglu">
+            <h1>用户登录</h1>
+            <p>
+                账号：
+                <input name="dengluid" type="text" placeholder="请输入您的账号" id="loginName">
+            </p>
+            <p class="pwd">
+                密码：
+                <input name="dengluid" type="password" placeholder="请输入您的密码" id="password">
+            </p>
+            <p class="error">
+                {{error}}
+            </p>
+            <p>
+                <button type="submit" id="login">登录</button>
+                <button type="button" id="zhuce">注册</button>
+            </p>
+        </div>
+    </div>
+
+    <div class="last">
+        @软件10班 SK小组版权所有
+    </div>
+
+    <script type="text/javascript" src="WEB-INF/js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="WEB-INF/js/vue.js"></script>
+    <script type="text/javascript">
+            $(function(){
+				vue = new Vue({
+					el:".error",
+					data:{
+						error:""
+					}
+				});
+                $("#login").click(function(){
+					var loginName = $("#loginName").val();
+					var password = $("#password").val();
+					var d = {
+						"loginName":loginName,
+						"password":password,
+					}
+					$.post("/denglu",d,function(data){
+						if(data){
+							location.href="home.html";
+						}
+						else{
+							vue.error="登录失败，请注册"
+						}
+					});
+				});
+				$("#zhuce").click(function(){
+					location.href="register.html";
+				});
+			});
+    </script>
+</body>
+</html>
