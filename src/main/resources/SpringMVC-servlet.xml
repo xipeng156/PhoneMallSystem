@@ -36,10 +36,7 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
-<!--引入静态资源-->
-<!--    <mvc:default-servlet-handler></mvc:default-servlet-handler>-->
-<!--    <mvc:resources mapping="/WEB-INF/**" location="/WEB-INF/"/>-->
-<!---->
+
 <!--    根据beannameurlhandlermapping处理映射器找对应控制器-->
 <!--    <bean id="/index.html" class="com.qst.controller.IndexController"/>-->
 <!--视图解析器-->
