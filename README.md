@@ -1,23 +1,21 @@
-### url
-####注册：
-  请求url： /register
-  入参：（1）登录账号---> loginName
-       （1）密码---> password
-       （1）用户真实姓名---> userName
-       （1）手机号---> phone
-  返回参数：data------>1：表示登录成功
-                     0：表示登录失败
-  
-登录：/denglu，
+# 网上手机商城
+> 前端开发：苏坤（sukun1140@163.com）
+> 后端开发：席鹏（1562107250@qq.com）
+>
+> 欢迎发送意见&建议到我们的邮箱
 
-### 文件太大 无法拉取问题解决方法
-error: RPC failed; curl 56 OpenSSL SSL_read: Connection was reset, errno 10054
-  1、打开gitcmd
-  2、设置拉取大小
-     git config --global http.postBuffer 524288000
-  3、查看git配置
-     git config --list
-  4、重试拉取
+# 项目配置
+
+- jdk：1.8
+- 数据库：mysql 5.1+
+- tomcat：8.5+
+- 建议浏览器：chrome
+
+# 技术覆盖
+
+总体架构：ssm+HTML5、css、JavaScript、jquery、bootstrap、vue
+
+# 数据库相关字段及解释
 
 
 #### user
@@ -29,8 +27,7 @@ error: RPC failed; curl 56 OpenSSL SSL_read: Connection was reset, errno 10054
 - gender 性别
 - birthday 出生日期
 - role 角色
-- portrait_url 头像地址
-- status 状态
+- portrait_url 头像地址status 状态
 
 #### address
 
